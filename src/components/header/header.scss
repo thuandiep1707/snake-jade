@@ -1,0 +1,90 @@
+.header{
+    &_first{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #05422C;
+        width: 100%;
+        height: 37px;
+        &_title{
+            color: #ffffffc2;
+            line-height: 20px;
+            margin-right: 16px;
+        }
+        &_clock{
+            color: #ffffffe1;
+        }
+    }
+    &_second{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: {
+            left: 64px;
+            right: 64px
+        };
+        height: 76px;
+        &_logo{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 150px;
+            height: 40px;
+            font-size: 25px;
+            color: #17AF26;
+            letter-spacing: 1px;
+            &_icon{
+                height: 100%;
+            }
+        }
+        &_search{
+            display: flex;
+            justify-content: space-between;
+            width: 456px;
+            &_box{
+                width: 400px;
+                height: 48px;
+                border: 1px #05422C solid;
+                border-radius: 24px;
+                outline: unset;
+                padding-left: 24px;
+            }
+            &_icon{
+                background-color: #17AF26;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                padding-top: 15px;
+                padding-left: 15px;
+                font-size: 18px;
+                color: #FFFFFF;
+            }
+        }
+        &_icon{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 190px;
+            color: #46494F;
+            &_account{
+                font-size: 14px;
+            }
+            &_cart{
+                font-size: 24px;
+            }
+        }
+    }
+    &_nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 56px;
+        &_option{
+            display: block;
+            margin: {
+                left: 20px;
+                right: 20px;
+            };
+        }
+    }
+}

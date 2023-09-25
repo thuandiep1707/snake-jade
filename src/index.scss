@@ -1,0 +1,15 @@
+*{
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pointer:hover,
+.pointer:active{
+    cursor: pointer;
+}
+.link{
+    // all: unset;
+    color: unset;
+    text-decoration: none;
+}
