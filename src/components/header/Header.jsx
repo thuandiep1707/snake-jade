@@ -22,9 +22,9 @@ const Header = () => {
                         <i className="fa-solid fa-magnifying-glass header_second_search_icon"/>
                     </div>
                     <div className="header_second_icon">
-                        <p className="header_second_icon_account">Your Account</p>
+                        <p className="header_second_icon_account pointer">Your Account</p>
                         <p>|</p>
-                        <i className="fa-solid fa-bag-shopping header_second_icon_cart"/>
+                        <i className="fa-solid fa-bag-shopping header_second_icon_cart pointer"/>
                     </div>
                 </div>
                 <div className="header_nav">
