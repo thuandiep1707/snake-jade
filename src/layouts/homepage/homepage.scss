@@ -1,0 +1,109 @@
+.homepage{
+    background: url('../../assets/img/BackgroundHomepage.png');
+    background-size: cover;
+    background-repeat: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 720px;
+    // border: 0.5px blue solid;
+    &_about{
+        display: flex;
+        // justify-content: ;
+        background-color: rgba(0, 58, 24, 0.5);
+        width: 100%;
+        height: 100%;
+        padding-top: 120px;
+        padding-left: 60px;
+        overflow: hidden;
+        &_contents{
+            flex: 1;
+            &_firstline{
+                letter-spacing: 2px;
+                font-size: 16px;
+                color: #F2BC1B;
+            }
+            &_title{
+                // border: 0.5px blue solid;
+                font-size: 64px;
+                width: calc(100% - 60px);
+                color: white;
+            }
+            &_vitamins{
+                color: white;
+                font-size: 24px;
+            }
+            &_promotion{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 100px;
+                width: 356px;
+                color: white;
+                font-size: 24px;
+            }
+            &_shop_btn{
+                background-color: #17AF26;
+                margin-top: 50px;
+                width: 185px;
+                height: 64px;
+                border-radius: 32px;
+                border: unset;
+                color: white;
+                font-size: 18px;
+            }
+        }
+        &_products{
+            flex: 1;
+            position: relative;
+            &_blocks1{
+                position: absolute;
+                right: 434px;
+                bottom: -5px;
+                z-index: 3;
+                width: 250px;
+                &_product{
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 180px;
+                }
+                &_block{
+                    width: 100%;
+                }
+            }
+            &_blocks2{
+                position: absolute;
+                right: 268px;
+                bottom: -5px;
+                // border: 0.5px blue solid;
+                width: 250px;
+                &_product{
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 180px;
+                }
+                &_block{
+                    width: 100%;
+                }
+            }
+            &_blocks3{
+                position: absolute;
+                right: -20px;
+                bottom: -5px;
+                width: 368px;
+                &_product{
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-35%,-20%);
+                    width: 180px;
+                }
+                &_block{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
