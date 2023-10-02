@@ -1,11 +1,14 @@
 import { useNavigate } from 'react-router-dom'
 
-import block1 from '../../assets/img/blockHomepage1.png'
-import block2 from '../../assets/img/blockHomepage2.png'
-import block3 from '../../assets/img/blockHomepage3.png'
-import product1 from '../../assets/img/blockProductHomepage1.png'
-import product2 from '../../assets/img/blockProductHomepage2.png'
-import product3 from '../../assets/img/blockProductHomepage3.png'
+import block1 from '../../assets/img/homepage/block1.png'
+import block2 from '../../assets/img/homepage/block2.png'
+import block3 from '../../assets/img/homepage/block3.png'
+import product1 from '../../assets/img/homepage/blockProduct1.png'
+import product2 from '../../assets/img/homepage/blockProduct2.png'
+import product3 from '../../assets/img/homepage/blockProduct3.png'
+import intro1 from '../../assets/img/homepage/intro1.png'
+import intro2 from '../../assets/img/homepage/intro2.png'
+import intro3 from '../../assets/img/homepage/intro3.png'
 
 import './homepage.scss'
 
@@ -40,6 +43,29 @@ const HomePage = () => {
                     <div className="homepage_about_products_blocks3">
                         <img src={product3} alt="" className="homepage_about_products_blocks3_product" />
                         <img src={block3} alt="" className="homepage_about_products_blocks3_block" />
+                    </div>
+                </div>
+            </div>
+            <div className="homepage_intros">
+                <div className="homepage_intros_intro">
+                    <img src={intro1} alt="" className="homepage_intros_intro_icon" />
+                    <div className="homepage_intros_intro_content">
+                        <h3 className="homepage_intros_intro_content_h3">Reliable Shipping</h3>
+                        <p className="homepage_intros_intro_content_p">Green Society provides Canada Post Xpress Shipping right to your doorstep! You can also opt in for shipping insurance. For orders over $149, shipping is free!</p>
+                    </div>
+                </div>
+                <div className="homepage_intros_intro">
+                    <img src={intro2} alt="" className="homepage_intros_intro_icon" />
+                    <div className="homepage_intros_intro_content">
+                        <h3 className="homepage_intros_intro_content_h3">You’re Safe With Us</h3>
+                        <p className="homepage_intros_intro_content_p">Our secure payment system accepts the most common forms of payments making the checkout process quicker! The payments we accept are debit, all major credit cards, and cryptocurrency.</p>
+                    </div>
+                </div>
+                <div className="homepage_intros_intro">
+                    <img src={intro3} alt="" className="homepage_intros_intro_icon" />
+                    <div className="homepage_intros_intro_content">
+                        <h3 className="homepage_intros_intro_content_h3">Best Quality & Pricing</h3>
+                        <p className="homepage_intros_intro_content_p">Here at Green Society, we take pride in the quality of our products and service. Our prices are set to ensure you receive your medication at a reasonable price and safely</p>
                     </div>
                 </div>
             </div>

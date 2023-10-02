@@ -1,5 +1,5 @@
 .homepage{
-    background: url('../../assets/img/BackgroundHomepage.png');
+    background: url('../../assets/img/homepage/BackgroundHomepage.png');
     background-size: cover;
     background-repeat: center;
     background-attachment: fixed;
@@ -102,6 +102,38 @@
                 }
                 &_block{
                     width: 100%;
+                }
+            }
+        }
+    }
+    &_intros{
+        display: flex;
+        justify-content: space-around;
+        // align-items: ;
+        background-color: #F2F6F4;
+        width: 100%;
+        height: 356px;
+        padding: 80px 32px;
+        
+        &_intro{
+            display: flex;
+            justify-content: space-between;
+            width: calc(30% - 64px - 32px);
+            max-height: 196px;
+            // border: 0.5px blue solid;
+            &_icon{
+                width: 100px;
+                height: 100px;
+            }
+            &_content{
+                width: 292px;
+                &_h3{
+                    font-size: 24px;
+                    margin-bottom: 16px;
+                }
+                &_p{
+                    color: #717378;
+                    font-size: 16px;
                 }
             }
         }
