@@ -1,16 +1,22 @@
+import { useState } from 'react';
 import {Link} from 'react-router-dom';
 
 import icon from '../../assets/img/icon.png';
 import './header.scss';
 
 const Header = () => {
-    
+    let date = new Date().toLocaleTimeString()
+    const [time, setTime] = useState(date)
+    setInterval(()=>{
+        let date = new Date().toLocaleTimeString()
+        setTime(date)
+    },1000)
     return (
         <>
             <div className="header">
                 <div className="header_first">
                     <p className="header_first_title">LIMITED OFFER: 30% OFF. Use RABBIT30 at Checkout.</p>
-                    <p className="header_first_clock">23 : 15 : 00</p>
+                    <p className="header_first_clock">{time}</p>
                 </div>
                 <div className="header_second">
                     <div className="header_second_logo">
