@@ -1,16 +1,20 @@
 import { useState } from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 
 import icon from '../../assets/img/icon.png';
 import './header.scss';
 
 const Header = () => {
+    const nav = useNavigate()
     let date = new Date().toLocaleTimeString()
     const [time, setTime] = useState(date)
     setInterval(()=>{
         let date = new Date().toLocaleTimeString()
         setTime(date)
     },1000)
+    const goHome = () => {
+        nav('/')
+    }
     return (
         <>
             <div className="header">
@@ -19,7 +23,7 @@ const Header = () => {
                     <p className="header_first_clock">{time}</p>
                 </div>
                 <div className="header_second">
-                    <div className="header_second_logo">
+                    <div className="header_second_logo pointer" onClick={()=>{goHome()}}>
                         <img src={icon} alt="logo" className='header_second_logo_icon'/>
                         Longterm
                     </div>
