@@ -1,0 +1,55 @@
+.footer{
+    position: relative;
+    background-color: #231F20;
+    padding: 160px;
+    &_banner{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #05422C;
+        width: 1600px;
+        // height: ;
+        padding: 81px;
+        border-radius: 20px;
+        &_title{
+            width: 1100px;
+            padding-bottom: 32px;
+            &_h1{
+                color: white;
+                font-size: 85px;
+                font-weight: 510;
+                padding-bottom: 24px;
+            }
+            &_p{
+                color: #C3D2CC;
+                font-size: 30px;
+            }
+        }
+        &_email{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 40px;
+            border-top: 1px #346654 solid;
+            height: 136px;
+            &_box{
+                width: 80%;
+                height: 100%;
+                background-color: unset;
+                border: 1px #346654 solid;
+                border-radius: 48px;
+                padding-left: 48px;
+                font-size: 21px;
+            }
+            &_btn{
+                background-color: #17AF26;
+                width: 18%;
+                outline: unset;
+                border: unset;
+                border-radius: 48px;
+                color: white;
+                font-size: 21px;
+            }
+        }
+    }
+}
