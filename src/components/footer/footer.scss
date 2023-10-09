@@ -1,7 +1,7 @@
 .footer{
     position: relative;
-    background-color: #231F20;
-    padding: 160px;
+    background: linear-gradient(#1A1A26,#01100B);
+    padding: 507px 160px 160px;
     &_banner{
         position: absolute;
         top: 0;
@@ -50,6 +50,76 @@
                 color: white;
                 font-size: 21px;
             }
+        }
+    }
+    &_content{
+        display: flex;
+        padding-bottom: 85px;
+        border-bottom: 1px #46494F solid;
+        &_description{
+            width: 30%;
+            &_logo{
+                display: flex;
+                height: 52px;
+                color: #17AF26;
+                font-size: 45px;
+                margin-bottom: 31px;
+                &_img{
+                    height: 100%;
+                    margin-right: 5px;
+                }
+            }
+            &_p{
+                width: 75%;
+                color: #9D9EA2;
+                font-size: 21px;
+            }
+        }
+        &_infor{
+            display: flex;
+            flex-direction: column;
+            gap: 53px;
+            flex: 1;
+            &_quick,
+            &_contact,
+            &_more{
+                &_h2{
+                    color: white;
+                    font-size: 27px;
+                    margin-bottom: 24px;
+                }
+                &_links,
+                &_buy{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-row-gap: 21px;
+                    grid-column-gap: 42px;
+                    &_p{
+                        color: #9D9EA2;
+                        font-size: 20px;
+                    }
+                }
+                &_p{
+                    color: #9D9EA2;
+                    font-size: 20px;
+                }
+            }
+            &_checkout{
+                height: 42px;
+                width: calc(272px / 100 * 133);
+            }
+        }
+    }
+    &_end{
+        display: flex;
+        justify-content: space-between;
+        padding: 53px 0 0;
+        color: #717378;
+        font-size: 21px;
+        &_right{
+            display: flex;
+            justify-content: space-between;
+            width: 605px;
         }
     }
 }
