@@ -69,6 +69,15 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
+            <div className="homepage_dispensary">
+                <h1 className="homepage_dispensary_title">BEST DISPENSARY TO BUY WEED ONLINE IN CANADA</h1>
+                <div className="homepage_dispensary_select">
+                    <p className="homepage_dispensary_select_page">Best Sellers</p>
+                    <p className="homepage_dispensary_select_page">Bundles & Promotions</p>
+                    <p className="homepage_dispensary_select_page">On Sale</p>
+                </div>
+
+            </div>
         </div>
     )
 }
