@@ -183,3 +183,5 @@ const education = [
         content: "Quality cannabis is a term used to describe cannabis products that meet specific standards of excellence. It is essential to understand what quality cannabis means, …"
     }
 ]
+
+export {education,recently,choose,testimonials,bestSale}
