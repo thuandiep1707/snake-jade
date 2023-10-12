@@ -12,7 +12,7 @@ const ProductCard = ({product}) => {
             <h3 className="productcard_name">{product.name}</h3>
             <p className="productcard_rate">
                 <i className="fa-solid fa-star" style={{color: "#dbd400"}} />{product.rate} | {product.review} 
-                <span className="productcard_rate_review"> review</span> 
+                <span className="productcard_rate_review"> Reviews</span> 
             </p>
             <p className="productcard_compound">{product.compound}</p>
             <p className="productcard_price">

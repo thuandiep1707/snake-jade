@@ -1,0 +1,38 @@
+.productcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &_img{
+        background: #F4F4F4;
+        aspect-ratio: 1.5;
+        width: 100%;
+        border-radius: 5px;
+    }
+    &_classification{
+        color: #9D9EA2;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    &_name{
+        text-align: center;
+        color: #1A1E26;
+        font-size: 18px;
+    }
+    &_rate{
+        &_review{
+            color: #C8C9CB;
+        }
+    }
+    &_compound{
+        padding: {
+            left: 20px;
+            right: 20px;
+        };
+        background: #F2F6F4;
+        border-radius: 5px;
+        color: #05422C;
+        font-size: 12px;
+        line-height: 40px;
+    }
+}

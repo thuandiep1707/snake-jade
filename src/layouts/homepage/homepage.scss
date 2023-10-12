@@ -1,6 +1,6 @@
 .homepage{
     width: 100%;
-    padding-bottom: 260px;
+    padding-bottom: 320px;
     &_about{
         background: url('../../assets/img/homepage/BackgroundHomepage.png');
         background-size: cover;
@@ -137,7 +137,7 @@
             }
         }
     }
-    &_dispensary{
+    &_bestsale{
         padding-top: 100px;
         width: 100%;
         &_title{
@@ -154,13 +154,56 @@
             // border: 0.5px blue solid;
             margin: 60px auto;
             &_page{
-              width: 30%;  
-              line-height: 48px;
-              font-size: 21px;
-              text-align: center;
-              border: 2px #05422C solid;
-              border-radius: 24px;
+                width: 30%;  
+                line-height: 48px;
+                font-size: 21px;
+                text-align: center;
+                border: 2px #05422C solid;
+                border-radius: 24px;
+            }
         }
+        &_products{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 150px;
+            &_view{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #05422C;
+                width: 379px;
+                height: 568px;
+                border-radius: 15px;
+                &_img{
+                    width: 213px;
+                    height: 213px;
+                }
+                &_title{
+                    margin: 24px auto 10px;
+                    color: white;
+                    font-size: 20px;
+                }
+                &_content{
+                    width: 216px;
+                    text-align: center;
+                    color: white;
+                    font-size: 14px;
+                    opacity: 0.6;
+                }
+                &_link{
+                    margin-top: 20px;
+                    color: #17AF26;
+                    font-size: 14px;
+                }
+            }
+            &_list{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 5%;
+                width: calc(100% - 379px - 5%);
+            }
         }
     }
+
 }

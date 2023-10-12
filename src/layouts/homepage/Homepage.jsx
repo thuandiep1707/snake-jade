@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 import block1 from '../../assets/img/homepage/block1.png'
 import block2 from '../../assets/img/homepage/block2.png'
@@ -9,6 +9,10 @@ import product3 from '../../assets/img/homepage/blockProduct3.png'
 import intro1 from '../../assets/img/homepage/intro1.png'
 import intro2 from '../../assets/img/homepage/intro2.png'
 import intro3 from '../../assets/img/homepage/intro3.png'
+import bestsale from '../../assets/img/homepage/bestsale.png'
+
+import { education,recently,choose,testimonials,bestSale } from '../../assets/data/homapageData'
+import ProductCard from '../../components/productcart/ProductCard'
 
 import './homepage.scss'
 
@@ -18,7 +22,6 @@ const HomePage = () => {
     const handleButtonNavToShop = () => {
         nav('/category')
     }
-
     return (
         <div className="homepage">
             <div className="homepage_about">
@@ -69,14 +72,26 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <div className="homepage_dispensary">
-                <h1 className="homepage_dispensary_title">BEST DISPENSARY TO BUY WEED ONLINE IN CANADA</h1>
-                <div className="homepage_dispensary_select">
-                    <p className="homepage_dispensary_select_page pointer">Best Sellers</p>
-                    <p className="homepage_dispensary_select_page pointer">Bundles & Promotions</p>
-                    <p className="homepage_dispensary_select_page pointer">On Sale</p>
+            <div className="homepage_bestsale">
+                <h1 className="homepage_bestsale_title">BEST DISPENSARY TO BUY WEED ONLINE IN CANADA</h1>
+                <div className="homepage_bestsale_select">
+                    <p className="homepage_bestsale_select_page pointer">Best Sellers</p>
+                    <p className="homepage_bestsale_select_page pointer">Bundles & Promotions</p>
+                    <p className="homepage_bestsale_select_page pointer">On Sale</p>
                 </div>
-
+                <div className="homepage_bestsale_products">
+                    <div className="homepage_bestsale_products_view">
+                        <img src={bestsale} alt="" className="homepage_bestsale_products_view_img" />
+                        <div className="homepage_bestsale_products_view_title">Shop our Best Sellers</div>
+                        <div className="homepage_bestsale_products_view_content">Lorem ipsum dolor sit amet consectetur. Ullamcorper ipsum varius lorem blandit lectus magnis feugiat. </div>
+                        <Link to='/category' className='homepage_bestsale_products_view_link'>View All</Link>
+                    </div>
+                    <div className="homepage_bestsale_products_list">
+                        {
+                            bestSale.map((product, index)=> <ProductCard product={product} key={index} />)
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     )
