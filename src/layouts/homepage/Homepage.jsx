@@ -117,6 +117,19 @@ const HomePage = () => {
             </div>
             <div className="homepage_choose">
                 <h1 className="homepage_choose_title">CHOOSE YOUR WEED</h1>
+                <div className="homepage_choose_filter">
+                    <p className="homepage_choose_filter_title">Filter by Interest</p>
+                    <div className="homepage_choose_filter_options">
+                        <p className="homepage_choose_filter_options_p">Flowers</p>
+                        <p className="homepage_choose_filter_options_p">Mushrooms</p>
+                        <p className="homepage_choose_filter_options_p">Concentrate</p>
+                        <p className="homepage_choose_filter_options_p">Edibles</p>
+                        <p className="homepage_choose_filter_options_p">Shop All Weed</p>
+                    </div>
+                </div>
+                <div className="homepage_choose_products">
+                    {choose.map((pro, key)=><ProductCard key={key} product={pro} />)}
+                </div>
             </div>
         </div>
     )
