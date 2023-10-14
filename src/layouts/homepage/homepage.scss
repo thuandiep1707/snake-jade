@@ -112,25 +112,21 @@
     }
     &_intros{
         display: flex;
-        justify-content: center;
-        gap: 150px;
-        // align-items: ;
+        justify-content: space-between;
         background-color: #F2F6F4;
         width: 100%;
         height: 356px;
-        padding: 80px 0;
-        
+        padding: 80px;
         &_intro{
             display: flex;
+            gap: 24px;
             justify-content: space-between;
-            width: calc(30% - 64px - 32px);
-            max-height: 196px;
+            width: 416px;
             &_icon{
                 width: 100px;
                 height: 100px;
             }
             &_content{
-                width: 292px;
                 &_h3{
                     font-size: 24px;
                     margin-bottom: 16px;
@@ -145,18 +141,18 @@
     &_bestsale{
         margin: 0 auto;
         padding-top: 100px;
-        width: 1600px;
+        width: 1400px;
         &_title{
             margin: 0 auto;
             // border: 0.5px blue solid;
-            width: 1240px;
-            font-size: 72px;
+            width: 948px;
+            font-size: 64px;
             text-align: center;
         }
         &_select{
             display: flex;
             justify-content: space-between;
-            width: 1600px;
+            width: 1200px;
             // border: 0.5px blue solid;
             margin: 60px auto;
             &_page{
@@ -171,6 +167,7 @@
         }
         &_products{
             display: flex;
+            gap: 32px;
             justify-content: space-between;
             padding: 0;
             height: 568px;
@@ -207,13 +204,13 @@
             &_list{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                column-gap: 5%;
-                width: calc(100% - 379px - 5%);
+                column-gap: 32px;
+                flex: 1;
             }
         }
     }
     &_testimonials{
-        width: 1600px;
+        width: 1400px;
         margin: 140px auto 0;
         &_title{
             color: #1A1E26;
@@ -221,6 +218,7 @@
         }
         &_container{
             display: flex;
+            gap: 32px;
             margin-top: 60px;
             height: 430px;
             &_card{
@@ -266,14 +264,14 @@
             &_comments{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                column-gap: 60px;
+                column-gap: 32px;
                 flex: 1;
-                margin-left: 120px;
+                // margin-left: 120px;
             }
         }
     }
     &_choose{
-        width: 1600px;
+        width: 1400px;
         margin: 160px auto 0;
         &_title{
             color: #1A1E26;
@@ -305,9 +303,117 @@
         &_products{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 568px;
+            grid-auto-rows: 568px;
             grid-gap: 32px;
             padding: 0 10px;
+        }
+    }
+    &_order{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        background-color: #01100B;
+        margin-top: 360px;
+        padding-top: 360px;
+        padding-bottom: 110px;
+        &_banner{
+            display: grid;
+            grid-template-areas: 
+                "refer btn"
+                "get btn";
+            align-items: center;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-size: cover;
+            width: 1200px;
+            height: 340px;
+            padding: 120px;
+            &_refer{
+                grid-area: refer;
+                color: white;
+                font-size: 64px;
+            }
+            &_get{
+                grid-area: get;
+                color: white;
+                font-size: 32px;
+                font-weight: 500;
+                &_span{
+                    margin-left: 24px;
+                    color: #F2BC1B;
+                }
+
+            }
+            &_btn{
+                grid-area: btn;
+                background-color: #17AF26;
+                margin: auto 0 auto auto;
+                width: 210px;
+                height: 64px;
+                border: 5px #17AF26 solid;
+                border-radius: 74px;
+                color: white;
+                font-size: 18px;
+                transition: all 0.25s linear;
+                &:hover{
+                    background-color: unset;
+                    color: #1ee232;
+                }
+            }
+        }
+        &_title{
+            width: 1100px;
+            text-align: center;
+            color: white;
+            font-size: 64px;
+        }
+        &_content{
+            width: 790px;
+            color: #9D9EA2;
+            font-size: 16px;
+            text-align: center;
+        }
+        &_procedure{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 1100px;
+            gap: 32px;
+            &_step{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                &_img{
+                    aspect-ratio: 1;
+                    width: 144px;
+                }
+                &_name{
+                    color: white;
+                    font-size: 24px;
+                }
+                &_description{
+                    text-align: center;
+                    color: #9D9EA2;
+                    font-size: 16px;
+                }
+            }
+        }
+        &_btn{
+            background-color: #17AF26;
+            margin-top: 70px;
+            padding: 24px 56px;
+            border: 2px #17AF26 solid;
+            border-radius: 56px;
+            color: white;
+            font-size: 16px;
+            &:hover{
+                background-color: unset;
+                color: #1ee232;
+            }
         }
     }
 }

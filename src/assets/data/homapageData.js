@@ -1,3 +1,9 @@
+import order1 from '../img/homepage/order1.png'
+import order2 from '../img/homepage/order2.png'
+import order3 from '../img/homepage/order3.png'
+import order4 from '../img/homepage/order4.png'
+
+
 const bestSale = [
     {
         img : "",
@@ -127,6 +133,29 @@ const choose = [
     }
 ]
 
+const order = [
+    {
+        img : order1,
+        stepName : "REGISTER",
+        description: "Sign up for an account with us. This is quick and simple. We don’t require any more details from you than the bare minimum needed for you to place an order and get your product delivered."
+    },
+    {
+        img : order2,
+        stepName : "SHOP",
+        description: "Decide on what you want to purchase. We stock a wide range of edibles,flowers , concentrates and mushrooms there is bound to be something for everyone."
+    },
+    {
+        img : order3,
+        stepName : "MAKE PAYMENT",
+        description: "Pay securely. Our site boasts sturdy protection certificates to keep your card details and related data safe."
+    },
+    {
+        img : order4,
+        stepName : "RELAX",
+        description: "Your product will be packaged discretely and shipped by Canada Post Xpresspost. We will provide you with a tracking number so then you can follow your mail order marijuana every step of the way."
+    },
+]
+
 const recently = [
     {
         img : "",
@@ -187,4 +216,4 @@ const education = [
     }
 ]
 
-export {education,recently,choose,testimonials,bestSale}
+export {education, recently, order, choose, testimonials, bestSale}

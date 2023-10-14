@@ -10,8 +10,9 @@ import intro1 from '../../assets/img/homepage/intro1.png'
 import intro2 from '../../assets/img/homepage/intro2.png'
 import intro3 from '../../assets/img/homepage/intro3.png'
 import bestsale from '../../assets/img/homepage/bestsale.png'
+import Maskgroup from '../../assets/img/homepage/Maskgroup.png'
 
-import { education,recently,choose,testimonials,bestSale } from '../../assets/data/homapageData'
+import { education, recently, order, choose, testimonials, bestSale } from '../../assets/data/homapageData'
 import ProductCard from '../../components/productcart/ProductCard'
 import TestimonialsCard from './components/TestimonialsCard'
 
@@ -19,7 +20,6 @@ import './homepage.scss'
 
 const HomePage = () => {
     const navigate = useNavigate()
-
     const handleButtonNavToShop = () => {
         navigate('/category')
     }
@@ -120,16 +120,37 @@ const HomePage = () => {
                 <div className="homepage_choose_filter">
                     <p className="homepage_choose_filter_title">Filter by Interest</p>
                     <div className="homepage_choose_filter_options">
-                        <p className="homepage_choose_filter_options_p">Flowers</p>
-                        <p className="homepage_choose_filter_options_p">Mushrooms</p>
-                        <p className="homepage_choose_filter_options_p">Concentrate</p>
-                        <p className="homepage_choose_filter_options_p">Edibles</p>
-                        <p className="homepage_choose_filter_options_p">Shop All Weed</p>
+                        <p className="homepage_choose_filter_options_p pointer">Flowers</p>
+                        <p className="homepage_choose_filter_options_p pointer">Mushrooms</p>
+                        <p className="homepage_choose_filter_options_p pointer">Concentrate</p>
+                        <p className="homepage_choose_filter_options_p pointer">Edibles</p>
+                        <p className="homepage_choose_filter_options_p pointer">Shop All Weed</p>
                     </div>
                 </div>
                 <div className="homepage_choose_products">
                     {choose.map((pro, key)=><ProductCard key={key} product={pro} />)}
                 </div>
+            </div>
+            <div className="homepage_order">
+                <div className="homepage_order_banner" style={{backgroundImage: `url(${Maskgroup})`}} >
+                    <h1 className="homepage_order_banner_refer">REFER A FRIENDS</h1>
+                    <h3 className="homepage_order_banner_get"> End get <span className='homepage_order_banner_get_span'>$30!</span></h3>
+                    <button className="homepage_order_banner_btn pointer">Refer Here</button>
+                </div>
+                <h1 className="homepage_order_title">HOW TO ORDER WEED ONLINE FROM TOP SHELF BC - MAIL ORDER MARIJUANA</h1>
+                <p className="homepage_order_content">Ordering weed online from Top Shelf BC is easy. We are proud to have made the process accessible across multiple platforms and simple to understand, meaning that more people can come to us to buy their cannabis products online.</p>
+                <div className="homepage_order_procedure">
+                        {
+                            order.map((value, key) =>
+                        <div className="homepage_order_procedure_step" key={key}>
+                            <img src={value.img} alt={value.step} className="homepage_order_procedure_step_img" />
+                            <h3 className="homepage_order_procedure_step_name">{value.stepName}</h3>
+                            <div className="homepage_order_procedure_step_description">{value.description}</div>
+                        </div>
+                            )   
+                        }
+                </div>
+                <button className="homepage_order_btn pointer" onClick={()=>handleButtonNavToShop()}>Choose your Weed</button>
             </div>
         </div>
     )

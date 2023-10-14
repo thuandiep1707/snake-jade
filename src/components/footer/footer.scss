@@ -1,41 +1,41 @@
 .footer{
     position: relative;
     background: linear-gradient(#1A1A26,#01100B);
-    padding: 507px 160px 60px;
+    padding-top: 380px;
+    padding-bottom: 64px;
     &_banner{
         position: absolute;
         top: 0;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: #05422C;
-        width: 1600px;
+        width: 1200px;
         // height: ;
-        padding: 81px;
+        padding: 64px;
         border-radius: 20px;
         &_title{
-            width: 1100px;
+            width: 790px;
             padding-bottom: 32px;
             &_h1{
                 color: white;
-                font-size: 85px;
+                font-size: 64px;
                 font-weight: 510;
                 padding-bottom: 24px;
             }
             &_p{
                 color: #C3D2CC;
-                font-size: 30px;
+                font-size: 20px;
             }
         }
         &_email{
             display: flex;
             justify-content: space-between;
-            padding-top: 40px;
+            padding-top: 32px;
             border-top: 1px #346654 solid;
-            height: 136px;
             &_box{
                 background-color: unset;
                 width: 80%;
-                height: 100%;
+                height: 72px;
                 padding-left: 48px;
                 border: 1px #346654 solid;
                 border-radius: 48px;
@@ -50,7 +50,7 @@
                 border: unset;
                 border-radius: 48px;
                 color: white;
-                font-size: 21px;
+                font-size: 16px;
                 border: 2px #17AF26 solid;
                 transition: all 0.25 solid;
                 &:hover{
@@ -63,9 +63,11 @@
     &_content{
         display: flex;
         padding-bottom: 85px;
+        margin: 0 auto;
+        width: 1200px;
         border-bottom: 1px #46494F solid;
         &_description{
-            width: 40%;
+            width: 740px;
             margin-left: 30px;
             &_logo{
                 display: flex;
@@ -81,20 +83,22 @@
             &_p{
                 width: 75%;
                 color: #9D9EA2;
-                font-size: 21px;
+                font-size: 16px;
             }
         }
         &_infor{
             display: flex;
             flex-direction: column;
             gap: 53px;
-            flex: 1;
+            // flex: 1;
+            width: 790px;
             &_quick,
             &_contact,
             &_more{
+                left: 1;
                 &_h2{
                     color: white;
-                    font-size: 27px;
+                    font-size: 20px;
                     margin-bottom: 24px;
                 }
                 &_links,
@@ -105,30 +109,33 @@
                     grid-column-gap: 42px;
                     &_p{
                         color: #9D9EA2;
-                        font-size: 20px;
+                        font-size: 14px;
                     }
                 }
                 &_p{
                     color: #9D9EA2;
-                    font-size: 20px;
+                    font-size: 14px;
                 }
             }
             &_checkout{
-                height: 42px;
-                width: calc(272px / 100 * 133);
+                height: 32px;
+                width: 272px;
             }
         }
     }
     &_end{
         display: flex;
         justify-content: space-between;
-        padding: 53px 0 0;
+        padding-top: 40px;
+        margin: 0 auto;
         color: #717378;
-        font-size: 21px;
+        font-size: 16px;
+        width: 1200px;
         &_right{
             display: flex;
             justify-content: space-between;
             width: 605px;
+            font-size: 14px;
         }
     }
 }
