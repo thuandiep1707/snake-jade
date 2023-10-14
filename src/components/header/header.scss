@@ -64,13 +64,28 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            position: relative;
             width: 190px;
-            color: #46494F;
+            color: #17AF26;
             &_account{
                 font-size: 14px;
             }
             &_cart{
+                color: #17AF26;
                 font-size: 24px;
+            }
+            &_quantity{
+                position: absolute;
+                bottom: 0px;
+                right: 5px;
+                background-color: red;
+                width: 15px;
+                line-height: 15px;
+                border-radius: 50%;
+                text-align: center;
+                color: white;
+                font-size: 10px;
+                font-weight: 500;
             }
         }
     }

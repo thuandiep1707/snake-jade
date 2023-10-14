@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useContext,useState } from 'react';
 import {Link, useNavigate} from 'react-router-dom';
 
+import { GlobalContext } from '../../GlobalContext';
 import icon from '../../assets/img/icon.png';
 import './header.scss';
 
 const Header = () => {
+    const {cart} = useContext(GlobalContext)
     const nav = useNavigate()
     let date = new Date().toLocaleTimeString()
     const [time, setTime] = useState(date)
@@ -34,7 +36,10 @@ const Header = () => {
                     <div className="header_second_icon">
                         <p className="header_second_icon_account pointer">Your Account</p>
                         <p>|</p>
-                        <i className="fa-solid fa-bag-shopping header_second_icon_cart pointer"/>
+                        <p className='pointer'>
+                            <i className="fa-solid fa-bag-shopping header_second_icon_cart"/>
+                            <span className='header_second_icon_quantity'>{cart.length}</span>
+                        </p>
                     </div>
                 </div>
                 <div className="header_nav">

@@ -208,7 +208,7 @@ const HomePage = () => {
                 <div className="homepage_edu_container">
                     {
                         education.map((value, key)=>
-                            <div className="homepage_edu_container_contain" ky={key}>
+                            <div className="homepage_edu_container_contain" key={key}>
                                 <img src={value.img} alt={value.title} className="homepage_edu_container_contain_img" />
                                 <h3 className="homepage_edu_container_contain_date">{value.date}</h3>
                                 <h2 className="homepage_edu_container_contain_title">{value.title}</h2>
