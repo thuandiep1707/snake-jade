@@ -12,7 +12,7 @@ import intro3 from '../../assets/img/homepage/intro3.png'
 import bestsale from '../../assets/img/homepage/bestsale.png'
 import Maskgroup from '../../assets/img/homepage/Maskgroup.png'
 
-import { education, recently, order, choose, testimonials, bestSale } from '../../assets/data/homapageData'
+import { education, recently, num1, order, choose, testimonials, bestSale } from '../../assets/data/homapageData'
 import ProductCard from '../../components/productcart/ProductCard'
 import TestimonialsCard from './components/TestimonialsCard'
 
@@ -151,6 +151,11 @@ const HomePage = () => {
                         }
                 </div>
                 <button className="homepage_order_btn pointer" onClick={()=>handleButtonNavToShop()}>Choose your Weed</button>
+            </div>
+            <div className="homepage_num1">
+                <div className="homepage_num1_title">
+                    WHAT MAKES US THE <span className='homepage_num1_title_span'>#1</span> ONLINE MARIJUANA DISPENSARY IN CANADA?
+                </div>
             </div>
         </div>
     )

@@ -3,6 +3,13 @@ import order2 from '../img/homepage/order2.png'
 import order3 from '../img/homepage/order3.png'
 import order4 from '../img/homepage/order4.png'
 
+import num1 from '../img/homepage/num1.png'
+import num2 from '../img/homepage/num2.png'
+import num3 from '../img/homepage/num3.png'
+import num4 from '../img/homepage/num4.png'
+import num5 from '../img/homepage/num5.png'
+import num6 from '../img/homepage/num6.png'
+
 
 const bestSale = [
     {
@@ -156,6 +163,39 @@ const order = [
     },
 ]
 
+const num1 = [
+    {
+        img : num1,
+        advantage : "CUSTOMER SERVICE",
+        description : "Whether it is answering any questions you have before making a purchase, helping out with the buying process itself or taking your feedback under consideration, we are proud to provide high quality customer service that makes you – the customer – the most important person in the transaction."
+    },
+    {
+        img : num2,
+        advantage : "SECURITY",
+        description : "When it comes to security, we only keep what details are necessary for you to have an account with us and make an order. When it comes to shipping your mail order marijuana out, we use only tamper-proof and discrete packaging so then what you’ve purchased is your business only."
+    },
+    {
+        img : num3,
+        advantage : "BEST VALUE",
+        description : "We are continually adjusting what we supply and our prices to ensure that we maintain an optimal balance of affordable and quality for our products. We invest in the best quality strains that we can find and are always on the lookout for new, affordable and high quality weed products."
+    },
+    {
+        img : num4,
+        advantage : "DELIVERY INSURANCE",
+        description : "If your mail order marijuana becomes lost, stolen, or damaged during transit, we will send you a replacement completely free of charge. Free Canada Post Xpress shipping on all orders over $120"
+    },
+    {
+        img : num5,
+        advantage : "HIGHEST QUALITY",
+        description : "All of our cannabis products are tested to ensure that they are the highest quality possible. We work with expert suppliers and are always revising what makes a quality cannabis product to ensure that we have only the best available."
+    },
+    {
+        img : num6,
+        advantage : "TRUST",
+        description : "With over 15 years in the weed business, you can rest assured that you will be taken care of. You can guarantee that we have your best interests in mind. Feel free to check out our reviews."
+    },
+]
+
 const recently = [
     {
         img : "",
@@ -216,4 +256,4 @@ const education = [
     }
 ]
 
-export {education, recently, order, choose, testimonials, bestSale}
+export {education, recently, num1, order, choose, testimonials, bestSale}
