@@ -200,6 +200,25 @@ const HomePage = () => {
                     )
                 }
             </div>
+            <div className="homepage_edu">
+                <div className="homepage_edu_header">
+                    <h2 className="homepage_edu_header_title">WEED EDUCATION</h2>
+                    <Link className="homepage_edu_header_link" to='/blogs'>Show All</Link>
+                </div>
+                <div className="homepage_edu_container">
+                    {
+                        education.map((value, key)=>
+                            <div className="homepage_edu_container_contain" ky={key}>
+                                <img src={value.img} alt={value.title} className="homepage_edu_container_contain_img" />
+                                <h3 className="homepage_edu_container_contain_date">{value.date}</h3>
+                                <h2 className="homepage_edu_container_contain_title">{value.title}</h2>
+                                <p className="homepage_edu_container_contain_content">{value.content}</p>
+                                <Link className='homepage_edu_container_contain_link' to='/blogs'>Read More</Link>
+                            </div>
+                        )
+                    }
+                </div>
+            </div>
         </div>
     )
 }

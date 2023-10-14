@@ -14,6 +14,10 @@ import indican from '../img/homepage/indican.png'
 import sativa from '../img/homepage/sativa.png'
 import hybrids from '../img/homepage/hybrids.png'
 
+import edu1 from '../img/homepage/edu1.png'
+import edu2 from '../img/homepage/edu2.png'
+import edu3 from '../img/homepage/edu3.png'
+
 const bestSale = [
     {
         img : "",
@@ -258,21 +262,21 @@ const tree = [
 
 const education = [
     {
-        img : "",
+        img : edu1,
         date: "January 24, 2023",
         title: "12 Mistakes To Avoid When Buying Cannabis Online",
         content: "Buying cannabis online can be a great way to get your hands on the products you need without leaving the comfort of your home. But …"
     },
     {
-        img : "",
+        img : edu2,
         date: "January 20, 2023",
         title: "How To Store Cannabis and Keep it Fresh and Potent?",
         content: "Cannabis packaging has advanced dramatically in recent years, whether your state has a medicinal marijuana programme, legal adult-use weed, or both. Most ..."
     },
     {
-        img : "",
+        img : edu3,
         date: "January 19, 2023",
-        title: "The Ultimate Guide to Checking the Quality of Cannabis – 10 Industry Leading Tips",
+        title: "The Ultimate Guide to Checking the Quality of Cannabis",
         content: "Quality cannabis is a term used to describe cannabis products that meet specific standards of excellence. It is essential to understand what quality cannabis means, …"
     }
 ]
