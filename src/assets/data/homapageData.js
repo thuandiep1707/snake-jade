@@ -163,7 +163,7 @@ const order = [
     },
 ]
 
-const num1 = [
+const num = [
     {
         img : num1,
         advantage : "CUSTOMER SERVICE",
@@ -256,4 +256,4 @@ const education = [
     }
 ]
 
-export {education, recently, num1, order, choose, testimonials, bestSale}
+export {education, recently, num, order, choose, testimonials, bestSale}

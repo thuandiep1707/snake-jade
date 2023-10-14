@@ -156,13 +156,18 @@
             // border: 0.5px blue solid;
             margin: 60px auto;
             &_page{
+                background-color: #F2F6F4;
                 width: 30%;  
-                border: 2px #05422C solid;
+                border: 2px #009f65 solid;
                 border-radius: 24px;
                 line-height: 48px;
                 color: #05422C;
                 font-size: 21px;
                 text-align: center;
+                transition: all .25s linear;
+                &:hover{
+                    box-shadow: 0 0 5px 1px #9D9EA2;
+                }
             }
         }
         &_products{
@@ -266,7 +271,6 @@
                 grid-template-columns: 1fr 1fr 1fr;
                 column-gap: 32px;
                 flex: 1;
-                // margin-left: 120px;
             }
         }
     }
@@ -297,6 +301,10 @@
                     font-size: 16px;
                     border: 1px #05422C solid;
                     border-radius: 20px;
+                    transition: all .25s linear;
+                    &:hover{
+                        box-shadow: 0 0 5px 1px #9D9EA2;
+                    }
                 }
             }
         }
@@ -414,6 +422,46 @@
             &:hover{
                 background-color: unset;
                 color: #1ee232;
+            }
+        }
+    }
+    &_num1{
+        width: 1400px;
+        margin: 120px auto;
+        &_title{
+            width: 790px;
+            color: #1A1E26;
+            font-size: 64px;
+            font-weight: 500;
+            letter-spacing: -5px;
+            &_span{
+                color: #F2BC1B;
+            }
+        }
+        &_headline{
+            width: 780px;
+            color: #717378;
+            font-size: 16px;
+        }
+        &_adventages{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: 375px;
+            grid-gap: 32px;
+            margin-top: 64px;
+            &_feature{
+                padding: 32px;
+                border: 2px #ebebeb solid;
+                border-radius: 12px;
+                &_advantage{
+                    color: #1A1E26;
+                    font-size: 24px;
+                    margin: 32px 0 16px;
+                }
+                &_description{
+                    color: 717378;
+                    font-size: 14px;
+                }
             }
         }
     }

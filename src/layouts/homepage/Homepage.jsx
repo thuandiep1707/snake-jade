@@ -12,7 +12,7 @@ import intro3 from '../../assets/img/homepage/intro3.png'
 import bestsale from '../../assets/img/homepage/bestsale.png'
 import Maskgroup from '../../assets/img/homepage/Maskgroup.png'
 
-import { education, recently, num1, order, choose, testimonials, bestSale } from '../../assets/data/homapageData'
+import { education, recently, num, order, choose, testimonials, bestSale } from '../../assets/data/homapageData'
 import ProductCard from '../../components/productcart/ProductCard'
 import TestimonialsCard from './components/TestimonialsCard'
 
@@ -155,6 +155,20 @@ const HomePage = () => {
             <div className="homepage_num1">
                 <div className="homepage_num1_title">
                     WHAT MAKES US THE <span className='homepage_num1_title_span'>#1</span> ONLINE MARIJUANA DISPENSARY IN CANADA?
+                </div>
+                <div className="homepage_num1_headline">
+                    When it comes to what makes us the <u>foremost online marijuana dispensary in Canada</u>, we could wax lyrical about our positive qualities. Instead, to make this information clearer, we’ve highlighted the six prioritized features that we feel makes us a cut above the rest.
+                </div>
+                <div className="homepage_num1_adventages">
+                    {
+                        num.map((value, key)=>
+                            <div className='homepage_num1_adventages_feature' key={key}>
+                                <img src={value.img} alt="" className="homepage_num1_adventages_feature_img" />
+                                <h3 className="homepage_num1_adventages_feature_advantage">{value.advantage}</h3>
+                                <p className="homepage_num1_adventages_feature_description">{value.description}</p>
+                            </div>
+                        )
+                    }
                 </div>
             </div>
         </div>
