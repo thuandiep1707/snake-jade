@@ -171,6 +171,23 @@ const HomePage = () => {
                     }
                 </div>
             </div>
+            <div className="homepage_recently">
+                <h1 className="homepage_recently_title">RECENTLY ADDED</h1>
+                <div className="homepage_recently_filter">
+                    <p className="homepage_recently_filter_title">Filter by Interest</p>
+                    <div className="homepage_recently_filter_options">
+                        <p className="homepage_recently_filter_options_p pointer">Flowers</p>
+                        <p className="homepage_recently_filter_options_p pointer">Mushrooms</p>
+                        <p className="homepage_recently_filter_options_p pointer">Concentrate</p>
+                        <p className="homepage_recently_filter_options_p pointer">Edibles</p>
+                        <p className="homepage_recently_filter_options_p pointer">Shop All Weed</p>
+                    </div>
+                    <u className="homepage_recently_filter_show pointer" onClick={()=>handleButtonNavToShop()}>Show All</u>
+                </div>
+                <div className="homepage_recently_products">
+                    {recently.map((product, key)=><ProductCard product={product} key={key}/>)}
+                </div>
+            </div>
         </div>
     )
 }

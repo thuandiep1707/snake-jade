@@ -465,4 +465,53 @@
             }
         }
     }
+    &_recently{
+        width: 1400px;
+        margin: 140px auto 120px;
+        &_title{
+            color: #1A1E26;
+            font-size: 64px;
+        }
+        &_filter{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            margin-top: 64px;
+            padding-bottom: 32px;
+            &_title{
+                color: #1A1E26;
+                font-size: 24px;
+            }
+            &_options{
+                display: flex;
+                gap: 24px;
+                width: 731px;
+                &_p{
+                    background: #F2F6F4;
+                    padding:0 20px;
+                    border: 2px #05422C solid;
+                    border-radius: 29px;
+                    line-height: 48px;
+                    font-size: 16px;
+                    transition: all .25s linear;
+                    &:hover{
+                        box-shadow: 0 0 5px 1px #9D9EA2;
+                    }
+                }
+            }
+            &_show{
+                flex: 1;
+                text-align: right;
+                color: #17AF26;
+                font-size: 16px;
+            }
+        }
+        &_products{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 568px;
+            grid-column-gap: 32px;
+        }
+    }
 }
