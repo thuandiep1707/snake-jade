@@ -20,11 +20,11 @@ const ProductCard = ({product}) => {
                 <span className="productcard_price_gram"> / gram</span>
             </p>
             <p className="productcard_weight">
-                <span>28g</span>
-                <span>1/2lb</span>
-                <span>1/4lb</span>
+                <span className='productcard_weight_span pointer'>28g</span>
+                <span className='productcard_weight_span pointer'>1/2lb</span>
+                <span className='productcard_weight_span pointer'>1/4lb</span>
             </p>
-            <button className="productcard_btn">See details</button>
+            <button className="productcard_btn pointer">See details</button>
         </div>
     )
 }

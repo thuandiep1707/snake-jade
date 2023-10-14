@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10px;
     &_img{
         background: #F4F4F4;
         aspect-ratio: 1.5;
@@ -21,6 +22,7 @@
     }
     &_rate{
         &_review{
+            margin-left: 10px;
             color: #C8C9CB;
         }
     }
@@ -33,6 +35,40 @@
         border-radius: 5px;
         color: #05422C;
         font-size: 12px;
-        line-height: 40px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    &_price{
+        &_gram{
+            color: #C8C9CB;
+            font-size: 14;
+        }
+    }
+    &_weight{
+        display: flex;
+        gap: 10px;
+        &_span{
+            padding: 5px 10px;
+            border: 2px #F4F4F4 solid;
+            border-radius: 5px;
+            color: #1A1E26;
+            transition: all 0.25s linear;
+            &:hover{
+                background-color: #F4F4F4;
+            }
+        }
+    }
+    &_btn{
+        background-color: #17AF26;
+        padding: 15px 30px;
+        border: 2px #17AF26 solid;
+        border-radius: 30px;
+        color: white;
+        font-size: 14px;
+        transition: all 0.25s linear;
+        &:hover{
+            background-color: white;
+            color: #17AF26;
+        }
     }
 }
