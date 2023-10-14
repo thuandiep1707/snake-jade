@@ -1,0 +1,39 @@
+.testimonialscard{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px #9D9EA2;
+    &_user{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+        border-bottom: 1px #bbbbbb solid;
+        &_avt{
+            background-color: black;
+            aspect-ratio: 1;
+            width: 35px;
+        }
+        &_name{
+            color: #1A1E26;
+            font-size: 16px;
+        }
+    }
+    &_stars{
+        margin-bottom: 16px;
+    }
+    &_comment{
+        color: #1A1E26;
+        font-size: 16px;
+        height: 120px;
+        margin-bottom: 70px;
+    }
+    &_date{
+        color: #9D9EA2;
+        font-size: 14px;
+    }
+}

@@ -13,6 +13,7 @@ import bestsale from '../../assets/img/homepage/bestsale.png'
 
 import { education,recently,choose,testimonials,bestSale } from '../../assets/data/homapageData'
 import ProductCard from '../../components/productcart/ProductCard'
+import TestimonialsCard from './components/TestimonialsCard'
 
 import './homepage.scss'
 
@@ -90,6 +91,27 @@ const HomePage = () => {
                         {
                             bestSale.map((product, index)=> <ProductCard product={product} key={index} />)
                         }
+                    </div>
+                </div>
+            </div>
+            <div className="homepage_testimonials">
+                <h1 className="homepage_testimonials_title">CUSTOMER TESTIMONIALS</h1>
+                <div className="homepage_testimonials_container">
+                    <div className="homepage_testimonials_container_card">
+                        <h2 className="homepage_testimonials_container_card_title">VOTED BEST ONLINE DISPENSARY IN CANADA</h2>
+                        <h2 className="homepage_testimonials_container_card_google">Google</h2>
+                        <div className="homepage_testimonials_container_card_exellencet">EXELLENCET</div>
+                        <p className="homepage_testimonials_container_card_rate">
+                            <div className="homepage_testimonials_container_card_rate_stars">
+                                {[...Array(5)].map(()=><i className="fa-solid fa-star" style={{color: "#F2BC1B"}}/>)}
+                            </div>
+                            <div className="homepage_testimonials_container_card_rate_span">|</div>
+                            on 135 
+                            <div className="homepage_testimonials_container_card_rate_span">Reviews</div>
+                        </p>
+                    </div>
+                    <div className="homepage_testimonials_container_comments">
+                        {testimonials.map((value, index)=><TestimonialsCard value={value} key={index}/>)}
                     </div>
                 </div>
             </div>

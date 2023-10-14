@@ -44,10 +44,15 @@
                 margin-top: 50px;
                 width: 185px;
                 height: 64px;
+                border: 3px #17AF26 solid;
                 border-radius: 32px;
-                border: unset;
                 color: white;
                 font-size: 18px;
+                transition: all 0.25s linear;
+                &:hover{
+                    background-color: unset;
+                    border: 3px white solid;
+                }
             }
         }
         &_products{
@@ -203,6 +208,66 @@
                 grid-template-columns: 1fr 1fr 1fr;
                 column-gap: 5%;
                 width: calc(100% - 379px - 5%);
+            }
+        }
+    }
+    &_testimonials{
+        width: 1600px;
+        margin: 140px auto 0;
+        &_title{
+            color: #1A1E26;
+            font-size: 64px;
+        }
+        &_container{
+            display: flex;
+            margin-top: 60px;
+            height: 430px;
+            &_card{
+                background-color: #05422C;
+                width: 379px;
+                height: 100%;
+                padding: 40px;
+                border-radius: 10px;
+                &_title{
+                    color: white;
+                    font-size: 32px;
+                    padding-bottom: 32px;
+                    border-bottom: 1px #f2f6f424 solid;
+                }
+                &_google{
+                    margin: 32px 0;
+                    color: white;
+                    font-size: 30px;
+                    font-weight: 400;
+                    opacity: 50%;
+                }
+                &_exellencet{
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                &_rate{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 15px;
+                    padding-right: 30px;
+                    color: white;
+                    &_stars{
+                        display: flex;
+                        gap: 5px;
+                    }
+                    &_span{
+                        color: #648A7C;
+                        font-size: 16px;
+                    }
+                }
+            }
+            &_comments{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 60px;
+                flex: 1;
+                margin-left: 120px;
             }
         }
     }

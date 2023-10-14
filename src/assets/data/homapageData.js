@@ -33,19 +33,22 @@ const testimonials = [
         avatar : "",
         name : "Vikki Starr",
         rate : 4,
-        comment : "Absolutely love TopShelfBC; affordable on any budget and such fast delivery, straight to my door! I recommend them to all my friends and family for their 420 needs."
+        comment : "Absolutely love TopShelfBC; affordable on any budget and such fast delivery, straight to my door! I recommend them to all my friends and family for their 420 needs.",
+        date : "January 15, 2023"
     },
     {
         avatar : "",
         name : "Terry Baskey",
         rate : 5,
-        comment : "Best damn place to buy your canabis at great prices"
+        comment : "Best damn place to buy your canabis at great prices",
+        date : "January 5, 2023"
     },
     {
         avatar : "",
         name : "Teran Buskai",
         rate : 3,
-        comment : "Best damn place to buy your canabis at great prices"
+        comment : "Best damn place to buy your canabis at great prices",
+        date : "January 3, 2023"
     }
 ]
 

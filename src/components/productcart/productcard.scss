@@ -3,7 +3,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10px;
+    padding: 5px 5px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 1px #9D9EA2;
+    transition: all 0.25s linear;
     &_img{
         background: #F4F4F4;
         aspect-ratio: 1.5;
@@ -70,5 +73,8 @@
             background-color: white;
             color: #17AF26;
         }
+    }
+    &:hover{
+        box-shadow: 0 0 15px 1px #9D9EA2;
     }
 }
