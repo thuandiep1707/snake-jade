@@ -161,11 +161,12 @@
             margin: 60px auto;
             &_page{
                 width: 30%;  
-                line-height: 48px;
-                font-size: 21px;
-                text-align: center;
                 border: 2px #05422C solid;
                 border-radius: 24px;
+                line-height: 48px;
+                color: #05422C;
+                font-size: 21px;
+                text-align: center;
             }
         }
         &_products{

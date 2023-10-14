@@ -33,12 +33,14 @@
             border-top: 1px #346654 solid;
             height: 136px;
             &_box{
+                background-color: unset;
                 width: 80%;
                 height: 100%;
-                background-color: unset;
+                padding-left: 48px;
                 border: 1px #346654 solid;
                 border-radius: 48px;
-                padding-left: 48px;
+                outline: unset;
+                color: #cecece;
                 font-size: 21px;
             }
             &_btn{
@@ -49,6 +51,12 @@
                 border-radius: 48px;
                 color: white;
                 font-size: 21px;
+                border: 2px #17AF26 solid;
+                transition: all 0.25 solid;
+                &:hover{
+                    background-color: unset;
+                    color: #17AF26;
+                }
             }
         }
     }

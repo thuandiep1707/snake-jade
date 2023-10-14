@@ -1,3 +1,4 @@
+import { useState } from 'react'
 
 import checkout from '../../assets/img/footer/checkout.png';
 import icon from '../../assets/img/icon.png';
@@ -5,6 +6,14 @@ import icon from '../../assets/img/icon.png';
 import './footer.scss'
 
 const Footer = () => {
+    const [email, setEmail] = useState()
+    const handleChangeEmail = (value) => {
+        setEmail(value)
+    }
+    const sendEmail = () => {
+        alert('We will send a discount code to your email!')
+        setEmail('')
+    }
     return (
         <div className="footer">
             <div className="footer_banner">
@@ -13,8 +22,8 @@ const Footer = () => {
                     <div className="footer_banner_title_p">Reveal coupon code by entering your email</div>
                 </div>
                 <div className="footer_banner_email">
-                    <input type="text" className="footer_banner_email_box" placeholder='Email Address'/>
-                    <button className="footer_banner_email_btn pointer">Reveal coupon</button>
+                    <input type="text" className="footer_banner_email_box" placeholder='Email Address' value={email} onChange={(e)=>handleChangeEmail(e.target.value)}/>
+                    <button className="footer_banner_email_btn pointer" onClick={()=>sendEmail()}>Reveal coupon</button>
                 </div>
             </div>
             <div className="footer_content">

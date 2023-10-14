@@ -18,10 +18,10 @@ import TestimonialsCard from './components/TestimonialsCard'
 import './homepage.scss'
 
 const HomePage = () => {
-    const nav = useNavigate()
+    const navigate = useNavigate()
 
     const handleButtonNavToShop = () => {
-        nav('/category')
+        navigate('/category')
     }
     return (
         <div className="homepage">
@@ -102,18 +102,21 @@ const HomePage = () => {
                         <h2 className="homepage_testimonials_container_card_google">Google</h2>
                         <div className="homepage_testimonials_container_card_exellencet">EXELLENCET</div>
                         <p className="homepage_testimonials_container_card_rate">
-                            <div className="homepage_testimonials_container_card_rate_stars">
-                                {[...Array(5)].map(()=><i className="fa-solid fa-star" style={{color: "#F2BC1B"}}/>)}
-                            </div>
-                            <div className="homepage_testimonials_container_card_rate_span">|</div>
+                            <span className="homepage_testimonials_container_card_rate_stars">
+                                {[...Array(5)].map((pro, key)=><i key={key} className="fa-solid fa-star" style={{color: "#F2BC1B"}}/>)}
+                            </span>
+                            <span className="homepage_testimonials_container_card_rate_span">|</span>
                             on 135 
-                            <div className="homepage_testimonials_container_card_rate_span">Reviews</div>
+                            <span className="homepage_testimonials_container_card_rate_span">Reviews</span>
                         </p>
                     </div>
                     <div className="homepage_testimonials_container_comments">
                         {testimonials.map((value, index)=><TestimonialsCard value={value} key={index}/>)}
                     </div>
                 </div>
+            </div>
+            <div className="homepage_choose">
+                <h1 className="homepage_choose_title">CHOOSE YOUR WEED</h1>
             </div>
         </div>
     )
