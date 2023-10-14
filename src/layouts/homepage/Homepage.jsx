@@ -12,7 +12,7 @@ import intro3 from '../../assets/img/homepage/intro3.png'
 import bestsale from '../../assets/img/homepage/bestsale.png'
 import Maskgroup from '../../assets/img/homepage/Maskgroup.png'
 
-import { education, recently, num, order, choose, testimonials, bestSale } from '../../assets/data/homapageData'
+import { education, tree, recently, num, order, choose, testimonials, bestSale } from '../../assets/data/homapageData'
 import ProductCard from '../../components/productcart/ProductCard'
 import TestimonialsCard from './components/TestimonialsCard'
 
@@ -187,6 +187,18 @@ const HomePage = () => {
                 <div className="homepage_recently_products">
                     {recently.map((product, key)=><ProductCard product={product} key={key}/>)}
                 </div>
+            </div>
+            <div className="homepage_tree">
+                {
+                    tree.map((value, key)=>
+                        <div className="homepage_tree_cpn" key={key}>
+                            <img src={value.img} alt={value.name} className="homepage_tree_cpn_img" />
+                            <h2 className="homepage_tree_cpn_name">{value.name}</h2>
+                            <p className="homepage_tree_cpn_content">{value.content}</p>
+                            <u className="homepage_tree_cpn_link pointer" onClick={()=>handleButtonNavToShop()}>Shop {value.name}</u>
+                        </div>
+                    )
+                }
             </div>
         </div>
     )

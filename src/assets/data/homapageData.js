@@ -10,6 +10,9 @@ import num4 from '../img/homepage/num4.png'
 import num5 from '../img/homepage/num5.png'
 import num6 from '../img/homepage/num6.png'
 
+import indican from '../img/homepage/indican.png'
+import sativa from '../img/homepage/sativa.png'
+import hybrids from '../img/homepage/hybrids.png'
 
 const bestSale = [
     {
@@ -235,6 +238,24 @@ const recently = [
     }
 ]
 
+const tree = [
+    {
+        img: indican,
+        name: "Indica",
+        content: "This type of cannabis is commonly taken by those who want to sink into a state of total relaxation in every limb. This reduces stress overall and can take your worries and fatigue away. Because of its relaxing effects, it is suggested to use this type of cannabis at night. It is particularly recommended for people who have trouble sleeping, be it due to insomnia."
+    },
+    {
+        img: sativa,
+        name: "Sativa",
+        content: "Contrary to the deep all-body relaxation that comes with the use of indica strains, sativas are known for increasing the feeling of creativity, enhancing focus and lessening anxiety. This is more of a mind-centered high in terms of how and where you will feel the effects. Given its stimulating nature, it is recommended to use this during the day."
+    },
+    {
+        img: hybrids,
+        name: "Hybrids",
+        content: "Hybrid strains are just that – they combine the head-focused high effects of sativas with the bodily relaxation of indicas. This is ideal for people who really want to sooth any fatigue and worries while also clearing the mind ready to focus fresh on something new. Hybrids are expertly tailored to result in strains with specific effects."
+    },
+]
+
 const education = [
     {
         img : "",
@@ -256,4 +277,4 @@ const education = [
     }
 ]
 
-export {education, recently, num, order, choose, testimonials, bestSale}
+export {education, tree, recently, num, order, choose, testimonials, bestSale}

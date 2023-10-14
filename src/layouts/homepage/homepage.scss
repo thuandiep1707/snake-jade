@@ -328,8 +328,8 @@
         &_banner{
             display: grid;
             grid-template-areas: 
-                "refer btn"
-                "get btn";
+            "refer btn"
+            "get btn";
             align-items: center;
             position: absolute;
             z-index: 1;
@@ -337,9 +337,10 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-size: cover;
-            width: 1200px;
+            width: 1400px;
             height: 340px;
             padding: 120px;
+            border-radius: 24px;
             &_refer{
                 grid-area: refer;
                 color: white;
@@ -512,6 +513,39 @@
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 568px;
             grid-column-gap: 32px;
+        }
+    }
+    &_tree{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 64px;
+        width: 1400px;
+        margin: 0 auto;
+        padding: 64px 0 0;
+        border-top: 1px #717378 solid;
+        &_cpn{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding: 32px;
+            border: 2px #ebebeb solid;
+            border-radius: 12px;
+            &_img{
+                width: 100%;
+                border-radius: 8px;
+            }
+            &_name{
+                color: #1A1E26;
+                font-size: 32px;
+            }
+            &_content{
+                color: #717378;
+                font-size: 14px;
+            }
+            &_link{
+                color: #17AF26;
+                font-size: 16px;
+            }
         }
     }
 }
