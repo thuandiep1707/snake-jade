@@ -23,30 +23,88 @@
     }
     &_container{
         display: grid;
-        grid-template-columns: 1fr 3fr;
-        width: 1440px;
+        grid-template-columns: 350px auto;
+        // width: 1440px;
         margin: 64px auto 330px;
         &_filter{
+            padding: 10px;
+            border: 1px solid #CECFD5;
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+            box-shadow: 0 0 5px 1px #CECFD5;
             &_title{
                 padding-bottom: 24px;
                 color: #1A1E26;
-                font-size: 18px;
+                font-size: 20px;
                 font-weight: 500;
             }
             &_prod{
+                margin-bottom: 20px;
+                padding: 20px 25px;
+                border-radius: 12px;
+                box-shadow: 0 0 5px 1px #CECFD5;
                 &_title{
-                    margin: 20px 0;
+                    margin-bottom: 20px ;
                     color: #717378;
-                    font-size: 12px;
+                    font-size: 14px;
                     font-weight: 400;
                 }
                 &_option{
-                    // display: flex;
-                    // flex-direction: column;
-                    // align-items: start;
-                    &_radio{
-                        display: inline block;
-                        border: 5px  red solid;
+                    display: grid;
+                    grid-template-columns: 1fr 2fr;
+                    row-gap: 12px;
+                    width: 250px;
+                    // &_radio{
+                    //     display: inline block;
+                    //     border: 5px  red solid;
+                    // }
+                    &_label{
+                        color: #46494F;
+                        font-size: 14px;
+                        &_span{
+                            padding-left: 20px;
+                            color: #9D9EA2;
+                        }
+                    }
+                }
+            }
+            &_price{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 24px;
+                margin-bottom: 20px;
+                padding: 20px 25px;
+                border-radius: 12px;
+                box-shadow: 0 0 5px 1px #CECFD5;
+                &_title{
+                    grid-column: 1/3;
+                    color: #717378;
+                    font-size: 14px;
+                    font-weight: 400;
+
+                }
+                &_input{
+                    grid-column: 1/3;
+                }
+                &_number{
+                    padding-left: 10px;
+                    line-height: 40px;
+                    color: #060709;
+                    font-size: 14px;
+                }
+                &_btn{
+                    justify-self: end;
+                    background-color: #17AF26;
+                    width: 104px;
+                    height: 40px;
+                    border: 2px #17AF26 solid;
+                    border-radius: 30px;
+                    color: white;
+                    font-size: 14px;
+                    transition: all .25s linear;
+                    &:hover{
+                        background-color: unset;
+                        color: #17AF26;
                     }
                 }
             }

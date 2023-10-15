@@ -1,9 +1,24 @@
-
+import { useState } from 'react'
 
 import { intros, productRadio } from '../../assets/data/categoryData'
 import './category.scss'
 
 const Category = () => {
+
+    const [productFilter, setProductFilter] = useState()
+    const [priceFilter, setPriceFilter] = useState(120)
+
+    const handleSetProductFilter = (value) => {
+        setProductFilter(value)
+    }
+
+    const handleSetPriceFilter = (value) => {
+        setPriceFilter(value)
+    }
+    const handleOnClickApply = () => {
+        console.log(priceFilter)
+    }
+
     return(
         <div className="category">
             <div className="category_intros">
@@ -25,15 +40,33 @@ const Category = () => {
                             {
                                 productRadio.map((value, key)=>
                                     <>
-                                        <input type="radio" id={`radio${key}`} className="category_container_filter_prod_option_radio" name='filter'/>
-                                        <label className="category_container_filter_prod_option_label" htmlFor={`radio${key}`}>
+                                        <input 
+                                            type="radio" 
+                                            id={`radio${key}`} 
+                                            key={`radio${key}`}
+                                            className="category_container_filter_prod_option_radio" 
+                                            name='filter'
+                                            value={value.type}
+                                            onChange={(e)=>handleSetProductFilter(e.target.value)}/>
+                                        <label className="category_container_filter_prod_option_label" key={`label${key}`} htmlFor={`radio${key}`}>
                                             {value.type} 
-                                            <span className="category_container_filter_prod_option_label">{value.quantity}</span>
+                                            <span className="category_container_filter_prod_option_label_span">{value.quantity}</span>
                                         </label>
                                     </>
                                 )
                             }
                         </div>
+                    </div>
+                    <div className="category_container_filter_price">
+                        <h3 className="category_container_filter_price_title">FILTER BY PRICE</h3>
+                        <input type="range" 
+                            value={priceFilter}
+                            min="0"
+                            max="1000"
+                            onChange={(e)=>handleSetPriceFilter(e.target.value)}
+                            className="category_container_filter_price_input" />
+                        <p className="category_container_filter_price_number">$ {priceFilter}</p>
+                        <button className="category_container_filter_price_btn pointer" onClick={()=>handleOnClickApply()}>Apply</button>
                     </div>
                 </div>
                 <div className="category_container_shop"></div>
