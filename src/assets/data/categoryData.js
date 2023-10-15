@@ -68,4 +68,6 @@ const productRadio = [
     },
 ]
 
-export {intros,productRadio}
+const order = ["Default", "Review Count", "Popularity", "Average Rating", "Newness", "Price: Low to High", "Price: High to Low", "Random Products", "Product Name"]
+
+export {intros, productRadio, order}

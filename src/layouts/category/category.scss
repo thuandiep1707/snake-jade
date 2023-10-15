@@ -33,7 +33,7 @@
             border-bottom-right-radius: 12px;
             box-shadow: 0 0 5px 1px #CECFD5;
             &_title{
-                padding-bottom: 24px;
+                margin-bottom: 24px;
                 color: #1A1E26;
                 font-size: 20px;
                 font-weight: 500;
@@ -51,13 +51,9 @@
                 }
                 &_option{
                     display: grid;
-                    grid-template-columns: 1fr 2fr;
+                    grid-template-columns: 1fr 3fr;
                     row-gap: 12px;
                     width: 250px;
-                    // &_radio{
-                    //     display: inline block;
-                    //     border: 5px  red solid;
-                    // }
                     &_label{
                         color: #46494F;
                         font-size: 14px;
@@ -105,6 +101,28 @@
                     &:hover{
                         background-color: unset;
                         color: #17AF26;
+                    }
+                }
+            }
+            &_order{
+                margin-bottom: 20px;
+                padding: 20px 25px;
+                border-radius: 12px;
+                box-shadow: 0 0 5px 1px #CECFD5;
+                &_title{
+                    margin-bottom: 20px ;
+                    color: #717378;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                &_option{
+                    display: grid;
+                    grid-template-columns: 1fr 3fr;
+                    row-gap: 12px;
+                    width: 250px;
+                    &_label{
+                        color: #46494F;
+                        font-size: 14px;
                     }
                 }
             }

@@ -1,12 +1,13 @@
 import { useState } from 'react'
 
-import { intros, productRadio } from '../../assets/data/categoryData'
+import { intros, productRadio, order } from '../../assets/data/categoryData'
 import './category.scss'
 
 const Category = () => {
 
     const [productFilter, setProductFilter] = useState()
     const [priceFilter, setPriceFilter] = useState(120)
+    const [orderFilter, setOrderFilter] = useState()
 
     const handleSetProductFilter = (value) => {
         setProductFilter(value)
@@ -15,8 +16,13 @@ const Category = () => {
     const handleSetPriceFilter = (value) => {
         setPriceFilter(value)
     }
+    
     const handleOnClickApply = () => {
         console.log(priceFilter)
+    }
+
+    const handleSetOrderFilter = (value) => {
+        setOrderFilter(value)
     }
 
     return(
@@ -67,6 +73,26 @@ const Category = () => {
                             className="category_container_filter_price_input" />
                         <p className="category_container_filter_price_number">$ {priceFilter}</p>
                         <button className="category_container_filter_price_btn pointer" onClick={()=>handleOnClickApply()}>Apply</button>
+                    </div>
+                    <div className="category_container_filter_order">
+                        <h3 className="category_container_filter_order_title">ORDER BY</h3>
+                        <div className="category_container_filter_order_option">
+                            {
+                                order.map((value, key)=>
+                                    <>
+                                    <input 
+                                        type="radio"
+                                        className="category_container_filter_order_option_radio" 
+                                        key={key}
+                                        name='order'
+                                        id={`order${key}`}
+                                        value={value}
+                                        onChange={(e)=>handleSetOrderFilter(e.target.value)}/>
+                                    <label htmlFor={`order${key}`} className="category_container_filter_order_option_label">{value}</label>
+                                    </>
+                                )
+                            }
+                        </div>
                     </div>
                 </div>
                 <div className="category_container_shop"></div>
