@@ -8,6 +8,7 @@ const Category = () => {
     const [productFilter, setProductFilter] = useState()
     const [priceFilter, setPriceFilter] = useState(120)
     const [orderFilter, setOrderFilter] = useState()
+    const [rateFilter, setRateFilter] = useState()
 
     const handleSetProductFilter = (value) => {
         setProductFilter(value)
@@ -23,6 +24,14 @@ const Category = () => {
 
     const handleSetOrderFilter = (value) => {
         setOrderFilter(value)
+    }
+
+    const handleSetRateFilter = (value) => {
+        setRateFilter(value)
+    }
+
+    const handleClearFilter = () => {
+        location.reload()
     }
 
     return(
@@ -94,6 +103,29 @@ const Category = () => {
                             }
                         </div>
                     </div>
+                    <div className="category_container_filter_review">
+                        <h3 className="category_container_filter_review_title">FILTER BY REVIEWS</h3>
+                        <div className="category_container_filter_review_rate">
+                            {
+                                [...Array(5)].map((value, index)=>
+                                <div className="category_container_filter_review_rate_stars" key={index}>
+                                    <input 
+                                        type="radio" 
+                                        className="category_container_filter_review_rate_stars_radio" 
+                                        name="star"
+                                        id={`rate ${index}`}
+                                        onChange={(e)=>handleSetRateFilter(e.target.value)}
+                                        />
+                                    <div className="category_container_filter_review_rate_stars_list">
+                                        {[...Array(5 - index)].map((pro, key)=><i key={key} className="fa-solid fa-star" style={{color: "#F2BC1B", fontSize: '16px', marginLeft : "4px"}}/>)}
+                                        {[...Array(index)].map((pro, key)=><i key={key} className="fa-solid fa-star" style={{color: "#c7cedb", fontSize: '16px', marginLeft : "4px", opacity: '0.7'}}/>)}
+                                    </div>
+                                </div>
+                                )
+                            }
+                        </div>
+                    </div>
+                    <button className="category_container_filter_clear pointer" onClick={()=>handleClearFilter()}>Clear Filters</button>
                 </div>
                 <div className="category_container_shop"></div>
             </div>
