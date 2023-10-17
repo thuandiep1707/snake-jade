@@ -26,7 +26,7 @@ const bestSale = [
         rate : "4.6/5",
         review : 132,
         compound : "Sativa 100%",
-        price : "$80.00"
+        price : 80
     },
     {
         img : "",
@@ -35,7 +35,7 @@ const bestSale = [
         rate : "4.6/5",
         review : 212,
         compound : "Sativa 100%",
-        price : "$102.00"
+        price : 102
     },
     {
         img : "",
@@ -44,7 +44,7 @@ const bestSale = [
         rate : "4.6/5",
         review : 135,
         compound : "Sativa 100%",
-        price : "$120.00"
+        price : 120
     }
 ]
 
@@ -80,7 +80,7 @@ const choose = [
         rate : "4.6/5",
         review : 132,
         compound : "Indica 70%",
-        price : "$102.00"
+        price : 102
     },
     {
         img : "",
@@ -89,7 +89,7 @@ const choose = [
         rate : "4.6/5",
         review : 132,
         compound : "Sativa 100%",
-        price : "$80.00"
+        price : 80
     },
     {
         img : "",
@@ -98,7 +98,7 @@ const choose = [
         rate : "4.6/5",
         review : 132,
         compound : "Sativa 100%",
-        price : "$80.00"
+        price : 80
     },
     {
         img : "",
@@ -107,7 +107,7 @@ const choose = [
         rate : "4.6/5",
         review : 132,
         compound : "Sativa 100%",
-        price : "$120.00"
+        price : 120
     },
     {
         img : "",
@@ -116,7 +116,7 @@ const choose = [
         rate : "4.6/5",
         review : 132,
         compound : "Sativa 100%",
-        price : "$80.00"
+        price : 80
     },
     {
         img : "",
@@ -125,7 +125,7 @@ const choose = [
         rate : "4.6/5",
         review : 132,
         compound : "Sativa 100%",
-        price : "$120.00"
+        price : 120
     },
     {
         img : "",
@@ -134,7 +134,7 @@ const choose = [
         rate : "4.6/5",
         review : 132,
         compound : "Indica 70%",
-        price : "$102.00"
+        price : 102
     },
     {
         img : "",
@@ -143,7 +143,7 @@ const choose = [
         rate : "4.6/5",
         review : 132,
         compound : "Sativa 100%",
-        price : "$80.00"
+        price : 80
     }
 ]
 
@@ -211,7 +211,7 @@ const recently = [
         rate : "4.6/5",
         review : 132,
         compound : "Sativa 100%",
-        price : "$80.00"
+        price : 80
     },
     {
         img : "",
@@ -220,7 +220,7 @@ const recently = [
         rate : "4.6/5",
         review : 132,
         compound : "Sativa 100%",
-        price : "$120.00"
+        price : 120
     },
     {
         img : "",
@@ -229,7 +229,7 @@ const recently = [
         rate : "4.6/5",
         review : 132,
         compound : "Sativa 100%",
-        price : "$102.00"
+        price : 102
     },
     {
         img : "",
@@ -238,7 +238,7 @@ const recently = [
         rate : "4.6/5",
         review : 132,
         compound : "Sativa 100%",
-        price : "$80.00"
+        price : 80
     }
 ]
 

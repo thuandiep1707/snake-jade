@@ -16,7 +16,7 @@ const ProductCard = ({product}) => {
             </p>
             <p className="productcard_compound">{product.compound}</p>
             <p className="productcard_price">
-                {product.price} 
+                $ {product.price}.00 
                 <span className="productcard_price_gram"> / gram</span>
             </p>
             <p className="productcard_weight">
