@@ -68,6 +68,111 @@ const productRadio = [
     },
 ]
 
+const selling = [
+    {
+        img : "",
+        classification : "FLOWER",
+        name : "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+        rate : "4.6/5",
+        review : 132,
+        compound : "Sativa 100%",
+        price : 80
+    },
+    {
+        img : "",
+        classification : "FLOWER",
+        name : "2 Oz Deal Ahi Tuna + Master Tuna",
+        rate : "4.6/5",
+        review : 132,
+        compound : "Sativa 100%",
+        price : 120
+    },
+    {
+        img : "",
+        classification : "CONCENTRATES",
+        name : "Mix And Match Shatter/Budder 28g (4 X 7G)",
+        rate : "4.6/5",
+        review : 132,
+        compound : "Sativa 100%",
+        price : 102
+    }
+]
+
+const category = [
+    {
+        img : "",
+        classification : "FLOWER",
+        name : "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+        rate : "4.6/5",
+        review : 132,
+        compound : "Sativa 100%",
+        price : 80
+    },
+    {
+        img : "",
+        classification : "FLOWER",
+        name : "2 Oz Deal Ahi Tuna + Master Tuna",
+        rate : "4.6/5",
+        review : 132,
+        compound : "Sativa 100%",
+        price : 120
+    },
+    {
+        img : "",
+        classification : "CONCENTRATES",
+        name : "Mix And Match Shatter/Budder 28g (4 X 7G)",
+        rate : "4.6/5",
+        review : 132,
+        compound : "Indica 100%",
+        price : 102
+    },
+    {
+        img : "",
+        classification : "FLOWER",
+        name : "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+        rate : "4.6/5",
+        review : 132,
+        compound : "Sativa 100%",
+        price : 80
+    },
+    {
+        img : "",
+        classification : "FLOWER",
+        name : "2 Oz Deal Ahi Tuna + Master Tuna",
+        rate : "4.6/5",
+        review : 132,
+        compound : "Sativa 100%",
+        price : 120
+    },
+    {
+        img : "",
+        classification : "CONCENTRATES",
+        name : "Mix And Match Shatter/Budder 28g (4 X 7G)",
+        rate : "4.6/5",
+        review : 132,
+        compound : "Indica 100%",
+        price : 102
+    }
+]
+const concentrates = [
+    {
+        img : "",
+        name : "Mix And Match Shatter/Budder 28g (4 X 7G)",
+        rate : "4.6/5",
+        review : 132,
+        compound : "Indica 100%",
+        price : 102
+    },
+    {
+        img : "",
+        name : "2 Oz Deal Ahi Tuna + Master Tuna",
+        rate : "4.6/5",
+        review : 132,
+        compound : "Sativa 100%",
+        price : 120
+    }
+]
+
 const order = ["Default", "Review Count", "Popularity", "Average Rating", "Newness", "Price: Low to High", "Price: High to Low", "Random Products", "Product Name"]
 
-export {intros, productRadio, order}
+export {intros, productRadio, order, selling, category, concentrates}
