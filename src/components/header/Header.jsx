@@ -43,12 +43,12 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="header_nav">
+                    <Link to='/' className='header_nav_option link pointer' >Home Page</Link>
                     <Link to='/category' className='header_nav_option link pointer' >Shop All</Link>
                     <Link to='/category' className='header_nav_option link pointer' >Flower</Link>
                     <Link to='/category' className='header_nav_option link pointer' >Edibles</Link>
                     <Link to='/category' className='header_nav_option link pointer' >Concentrates</Link>
                     <Link to='/category' className='header_nav_option link pointer' >Mushrooms</Link>
-                    <Link to='/category' className='header_nav_option link pointer' >Promotions/Bundles</Link>
                     <Link to='/support' className='header_nav_option link pointer' >Support</Link>
                     <Link to='/rewards' className='header_nav_option link pointer' >Rewards</Link>
                     <Link to='/Blogs' className='header_nav_option link pointer' >Blogs</Link>
