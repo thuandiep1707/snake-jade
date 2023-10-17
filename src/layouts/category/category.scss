@@ -11,6 +11,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
             padding: 12px auto;
             &_img{
                 height: calc(100% - 24px);
@@ -20,6 +21,28 @@
                 color: #1A1E26;
                 font-size: 20px;
             }
+            &:first-child::before{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 20%;
+                right: 0px;
+                z-index: 1;
+                background-color: #05422c2f;
+                width: 2px;
+                height: 60%;
+            }            
+            &:last-child::before{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 20%;
+                left: 0px;
+                z-index: 1;
+                background-color: #05422c2f;
+                width: 2px;
+                height: 60%;
+            }
         }
     }
     &_container{
@@ -28,7 +51,7 @@
         // width: 1440px;
         margin: 64px auto 330px;
         &_filter{
-            padding: 10px;
+            padding: 10px 10px 20px;
             border: 1px solid #CECFD5;
             border-top-right-radius: 12px;
             border-bottom-right-radius: 12px;
