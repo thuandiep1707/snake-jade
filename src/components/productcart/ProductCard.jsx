@@ -6,7 +6,7 @@ const ProductCard = ({product}) => {
     
 
     return(
-        <div className="productcard">
+        <div className="productcard pointer">
             <img src={product.img} alt="" className="productcard_img" />
             <h3 className="productcard_classification">{product.classification}</h3>
             <h3 className="productcard_name">{product.name}</h3>
@@ -24,7 +24,7 @@ const ProductCard = ({product}) => {
                 <span className='productcard_weight_span pointer'>1/2lb</span>
                 <span className='productcard_weight_span pointer'>1/4lb</span>
             </p>
-            <button className="productcard_btn pointer">See details</button>
+            <button className="productcard_btn pointer">See Details</button>
         </div>
     )
 }

@@ -6,11 +6,10 @@ import './category.scss'
 
 const Category = () => {
 
-    const [productFilter, setProductFilter] = useState()
+    const [productFilter, setProductFilter] = useState("Sales")
     const [priceFilter, setPriceFilter] = useState(120)
     const [orderFilter, setOrderFilter] = useState()
     const [rateFilter, setRateFilter] = useState()
-    const [panelNum, setPanelNum] = useState(0)
     const handleSetProductFilter = (value) => {
         setProductFilter(value)
     }
@@ -157,22 +156,27 @@ const Category = () => {
                         <div className="category_container_shop_main_panel">
                             <div className="category_container_shop_main_panel_content">
                                 <h3 className="category_container_shop_main_panel_content_title">CONCENTRATES</h3>
-                                <h2 className="category_container_shop_main_panel_content_name">{panel[panelNum].name}</h2>
-                                <p className="productcard_rate">
-                                    <i className="fa-solid fa-star" style={{color: "#dbd400"}} />{panel[panelNum].rate} | {panel[panelNum].review} 
-                                    <span className="productcard_rate_review"> Reviews</span> 
+                                <h2 className="category_container_shop_main_panel_content_name">{panel.name}</h2>
+                                <p className="category_container_shop_main_panel_content_rate">
+                                    <i className="fa-solid fa-star" style={{color: "#dbd400"}} />{panel.rate} 
+                                        <span className="category_container_shop_main_panel_content_rate_review"> | </span> 
+                                     {panel.review} 
+                                    <span className="category_container_shop_main_panel_content_rate_review"> Reviews</span> 
                                 </p>
-                                <p className="productcard_weight">
-                                    <span className='productcard_weight_span pointer'>28g</span>
-                                    <span className='productcard_weight_span pointer'>1/2lb</span>
-                                    <span className='productcard_weight_span pointer'>1/4lb</span>
+                                <p className="category_container_shop_main_panel_content_weight">
+                                    <span className='category_container_shop_main_panel_content_weight_span pointer'>28g</span>
+                                    <span className='category_container_shop_main_panel_content_weight_span pointer'>1/2lb</span>
+                                    <span className='category_container_shop_main_panel_content_weight_span pointer'>1/4lb</span>
                                 </p>
-                                <button className="productcard_btn pointer">See details</button>
-                                <p className="productcard_price">{panel[panelNum].price}</p>
+                                <button className="category_container_shop_main_panel_content_btn pointer">See Details</button>
+                                <p className="category_container_shop_main_panel_content_price">
+                                    $ {panel.price}.00
+                                    <del className="category_container_shop_main_panel_content_price_del">$200.00</del>
+                                </p>
                             </div>
-                            <div className="category_container_shop_main_panel_img"></div>
+                            <img src={panel.img} alt={panel.title} className="category_container_shop_main_panel_img" />
                         </div>                        
-                        <div className="category_container_shop_main_category">
+                        <div className="category_container_shop_main_category" style={{marginBottom: "60px"}}>
                             {
                                 category.map((product, key)=><ProductCart product={product} key={key} />)
                             }

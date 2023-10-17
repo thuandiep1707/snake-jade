@@ -181,24 +181,14 @@ const category = [
         price : 80
     }
 ]
-const panel = [
-    {
+const panel = {
         img : "",
         name : "Mix And Match Shatter/Budder 28g (4 X 7G)",
         rate : "4.6/5",
         review : 132,
         compound : "Indica 100%",
         price : 102
-    },
-    {
-        img : "",
-        name : "2 Oz Deal Ahi Tuna + Master Tuna",
-        rate : "4.6/5",
-        review : 132,
-        compound : "Sativa 100%",
-        price : 120
-    }
-]
+}
 
 const order = ["Default", "Review Count", "Popularity", "Average Rating", "Newness", "Price: Low to High", "Price: High to Low", "Random Products", "Product Name"]
 
