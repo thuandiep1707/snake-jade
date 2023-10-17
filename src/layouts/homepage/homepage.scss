@@ -155,7 +155,6 @@
             // border: 0.5px blue solid;
             margin: 60px auto;
             &_page{
-                background-color: #F2F6F4;
                 width: 30%;  
                 border: 2px #009f65 solid;
                 border-radius: 24px;
@@ -163,9 +162,11 @@
                 color: #05422C;
                 font-size: 21px;
                 text-align: center;
+                box-shadow: 0 0 2px 1px #9D9EA2;
                 transition: all .25s linear;
                 &:hover{
-                    box-shadow: 0 0 5px 1px #9D9EA2;
+                    background-color: #F2F6F4;
+                    box-shadow: 0 0 10px 1px #9D9EA2;
                 }
             }
         }
@@ -294,15 +295,16 @@
                 display: flex;
                 gap: 24px;
                 &_p{
-                    background-color: #F2F6F4;
                     padding: 8px 20px;
                     color: #05422C;
                     font-size: 16px;
                     border: 1px #05422C solid;
                     border-radius: 20px;
+                    box-shadow: 0 0 2px 1px #9D9EA2;
                     transition: all .25s linear;
                     &:hover{
-                        box-shadow: 0 0 5px 1px #9D9EA2;
+                        background-color: #F2F6F4;
+                        box-shadow: 0 0 10px 1px #9D9EA2;
                     }
                 }
             }

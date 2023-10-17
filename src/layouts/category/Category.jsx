@@ -10,7 +10,7 @@ const Category = () => {
     const [priceFilter, setPriceFilter] = useState(120)
     const [orderFilter, setOrderFilter] = useState()
     const [rateFilter, setRateFilter] = useState()
-
+    const [panelNum, setPanelNum] = useState(0)
     const handleSetProductFilter = (value) => {
         setProductFilter(value)
     }
@@ -131,8 +131,7 @@ const Category = () => {
                 <section className="category_container_shop">
                     <header className="category_container_shop_header">
                         <h2 className="category_container_shop_header_shop">Shop</h2>
-                        <select name="sort" id="" className="category_container_shop_header_sort">
-                            <option selected value={null} className="category_container_shop_header_sort_lates">---</option>
+                        <select defaultValue={null} name="sort" id="" className="category_container_shop_header_sort">
                             <option value="lates" className="category_container_shop_header_sort_lates">Sort By Lates</option>
                             <option value="price" className="category_container_shop_header_sort_price">Sort By Price</option>
                         </select>
@@ -155,7 +154,24 @@ const Category = () => {
                                 category.map((product, key)=><ProductCart product={product} key={key} />)
                             }
                         </div>
-                        <div className="category_container_shop_main_panel"></div>                        
+                        <div className="category_container_shop_main_panel">
+                            <div className="category_container_shop_main_panel_content">
+                                <h3 className="category_container_shop_main_panel_content_title">CONCENTRATES</h3>
+                                <h2 className="category_container_shop_main_panel_content_name">{panel[panelNum].name}</h2>
+                                <p className="productcard_rate">
+                                    <i className="fa-solid fa-star" style={{color: "#dbd400"}} />{panel[panelNum].rate} | {panel[panelNum].review} 
+                                    <span className="productcard_rate_review"> Reviews</span> 
+                                </p>
+                                <p className="productcard_weight">
+                                    <span className='productcard_weight_span pointer'>28g</span>
+                                    <span className='productcard_weight_span pointer'>1/2lb</span>
+                                    <span className='productcard_weight_span pointer'>1/4lb</span>
+                                </p>
+                                <button className="productcard_btn pointer">See details</button>
+                                <p className="productcard_price">{panel[panelNum].price}</p>
+                            </div>
+                            <div className="category_container_shop_main_panel_img"></div>
+                        </div>                        
                         <div className="category_container_shop_main_category">
                             {
                                 category.map((product, key)=><ProductCart product={product} key={key} />)
