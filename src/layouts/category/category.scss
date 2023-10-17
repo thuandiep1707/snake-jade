@@ -48,7 +48,7 @@
     &_container{
         display: grid;
         grid-template-columns: 350px auto;
-        // width: 1440px;
+        gap: 64px;
         margin: 64px auto 330px;
         &_filter{
             padding: 10px 10px 20px;
@@ -184,6 +184,30 @@
                 &:hover{
                     background-color: unset;
                     color: #17AF26;
+                }
+            }
+        }
+        &_shop{
+            padding-right: 64px;
+            &_header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 70px;
+                margin-bottom: 24px;
+                border-bottom: 1px #f4f4f4 solid;
+                &_shop{
+                    color: #1A1E26;
+                    font-size: 24px;
+                    font-weight: 400;
+                }
+                &_sort{
+                    width: 140px;
+                    height: 44px;
+                    appearance: none;
+                    border-radius: 100px;
+                    outline: unset;
+                    text-align: center;
                 }
             }
         }

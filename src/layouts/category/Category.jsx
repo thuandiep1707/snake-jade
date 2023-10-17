@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
-import { intros, productRadio, order } from '../../assets/data/categoryData'
+import ProductCart from '../../components/productcart/ProductCard'
+import { intros, productRadio, order, selling, category, panel } from '../../assets/data/categoryData'
 import './category.scss'
 
 const Category = () => {
@@ -35,8 +36,8 @@ const Category = () => {
     }
 
     return(
-        <div className="category">
-            <div className="category_intros">
+        <main className="category">
+            <header className="category_intros">
                 {
                     intros.map((value, key)=>
                         <div className="category_intros_intro" key={key}>
@@ -45,9 +46,9 @@ const Category = () => {
                         </div>
                     )
                 }
-            </div>
-            <div className="category_container">
-                <div className="category_container_filter">
+            </header>
+            <section className="category_container">
+                <section className="category_container_filter">
                     <h2 className="category_container_filter_title">Filter</h2>
                     <div className="category_container_filter_prod">
                         <h3 className="category_container_filter_prod_title">PRODUCT CATEGORY</h3>
@@ -126,10 +127,36 @@ const Category = () => {
                         </div>
                     </div>
                     <button className="category_container_filter_clear pointer" onClick={()=>handleClearFilter()}>Clear Filters</button>
-                </div>
-                <div className="category_container_shop"></div>
-            </div>
-        </div>
+                </section>
+                <section className="category_container_shop">
+                    <header className="category_container_shop_header">
+                        <h2 className="category_container_shop_header_shop">Shop</h2>
+                        <select name="sort" id="" className="category_container_shop_header_sort">
+                            <option selected value={null} className="category_container_shop_header_sort_lates">---</option>
+                            <option value="lates" className="category_container_shop_header_sort_lates">Sort By Lates</option>
+                            <option value="price" className="category_container_shop_header_sort_price">Sort By Price</option>
+                        </select>
+                    </header>
+                    <summary className="category_container_shop_summary">
+                        <h2 className="category_container_shop_summary_title">Cannabis</h2>
+                        <p className="category_container_shop_headline_content">Here at WestCoastSupply’s “ cannabis section, we showcase the best Indica, Hybrid, and Sativa medical cannabis strain selections at the best prices online. You can be assured that all our strains go through a strict screening process to ensure that all your cannabis needs are top-quality. All of our flowers are sourced from reputable growers, based in British Columbia, Canada. We have hige grade selection comes from growers that produce AAAA+ quality cannabis flowers and have many years of experience in the cannabis industry. You are guaranteed to be receiving high-quality flowers at the best prices online with our unbeatable sales!</p>
+                    </summary>
+                    <section className="category_container_shop_detail">
+                        <div className="category_container_shop_detail_selling">
+                            <h3 className="category_container_shop_detail_selling_title">Top Selling</h3>
+                            <div className="category_container_shop_detail_selling_products">
+                                {
+                                    selling.map((prođuct, key)=> <ProductCart product={prođuct} key={key} />)
+                                }
+                            </div>
+                        </div>
+                        <div className="category_container_shop_detail_category1"></div>
+                        <div className="category_container_shop_detail_panel"></div>
+                        <div className="category_container_shop_detail_category2"></div>
+                    </section>
+                </section>
+            </section>
+        </main>
     )
 }
 

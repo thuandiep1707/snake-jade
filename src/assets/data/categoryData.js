@@ -154,7 +154,7 @@ const category = [
         price : 102
     }
 ]
-const concentrates = [
+const panel = [
     {
         img : "",
         name : "Mix And Match Shatter/Budder 28g (4 X 7G)",
@@ -175,4 +175,4 @@ const concentrates = [
 
 const order = ["Default", "Review Count", "Popularity", "Average Rating", "Newness", "Price: Low to High", "Price: High to Low", "Random Products", "Product Name"]
 
-export {intros, productRadio, order, selling, category, concentrates}
+export {intros, productRadio, order, selling, category, panel}
