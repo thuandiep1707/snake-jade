@@ -152,6 +152,33 @@ const category = [
         review : 132,
         compound : "Indica 100%",
         price : 102
+    },
+    {
+        img : "",
+        classification : "CONCENTRATES",
+        name : "Mix And Match Shatter/Budder 28g (4 X 7G)",
+        rate : "4.6/5",
+        review : 132,
+        compound : "Indica 70%",
+        price : 102
+    },
+    {
+        img : "",
+        classification : "FLOWER",
+        name : "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+        rate : "4.6/5",
+        review : 132,
+        compound : "Sativa 100%",
+        price : 80
+    },
+    {
+        img : "",
+        classification : "FLOWER",
+        name : "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+        rate : "4.6/5",
+        review : 132,
+        compound : "Sativa 100%",
+        price : 80
     }
 ]
 const panel = [

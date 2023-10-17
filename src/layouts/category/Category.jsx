@@ -139,20 +139,28 @@ const Category = () => {
                     </header>
                     <summary className="category_container_shop_summary">
                         <h2 className="category_container_shop_summary_title">Cannabis</h2>
-                        <p className="category_container_shop_headline_content">Here at WestCoastSupply’s “ cannabis section, we showcase the best Indica, Hybrid, and Sativa medical cannabis strain selections at the best prices online. You can be assured that all our strains go through a strict screening process to ensure that all your cannabis needs are top-quality. All of our flowers are sourced from reputable growers, based in British Columbia, Canada. We have hige grade selection comes from growers that produce AAAA+ quality cannabis flowers and have many years of experience in the cannabis industry. You are guaranteed to be receiving high-quality flowers at the best prices online with our unbeatable sales!</p>
+                        <p className="category_container_shop_summary_content">Here at WestCoastSupply’s “ cannabis section, we showcase the best Indica, Hybrid, and Sativa medical cannabis strain selections at the best prices online. You can be assured that all our strains go through a strict screening process to ensure that all your cannabis needs are top-quality. All of our flowers are sourced from reputable growers, based in British Columbia, Canada. We have hige grade selection comes from growers that produce AAAA+ quality cannabis flowers and have many years of experience in the cannabis industry. You are guaranteed to be receiving high-quality flowers at the best prices online with our unbeatable sales!</p>
                     </summary>
-                    <section className="category_container_shop_detail">
-                        <div className="category_container_shop_detail_selling">
-                            <h3 className="category_container_shop_detail_selling_title">Top Selling</h3>
-                            <div className="category_container_shop_detail_selling_products">
+                    <section className="category_container_shop_main">
+                        <div className="category_container_shop_main_selling">
+                            <h3 className="category_container_shop_main_selling_title">Top Selling</h3>
+                            <div className="category_container_shop_main_selling_products">
                                 {
-                                    selling.map((prođuct, key)=> <ProductCart product={prođuct} key={key} />)
+                                    selling.map((product, key)=><ProductCart product={product} key={key} />)
                                 }
                             </div>
                         </div>
-                        <div className="category_container_shop_detail_category1"></div>
-                        <div className="category_container_shop_detail_panel"></div>
-                        <div className="category_container_shop_detail_category2"></div>
+                        <div className="category_container_shop_main_category">
+                            {
+                                category.map((product, key)=><ProductCart product={product} key={key} />)
+                            }
+                        </div>
+                        <div className="category_container_shop_main_panel"></div>                        
+                        <div className="category_container_shop_main_category">
+                            {
+                                category.map((product, key)=><ProductCart product={product} key={key} />)
+                            }
+                        </div>
                     </section>
                 </section>
             </section>
