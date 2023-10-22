@@ -2,28 +2,39 @@ import { useContext,useState } from 'react';
 import {Link, useNavigate} from 'react-router-dom';
 
 import { GlobalContext } from '../../GlobalContext';
+import Cart from '../cart/Cart'
 import icon from '../../assets/img/icon.png';
 import './header.scss';
 
-const Header = () => {
-    const {cart} = useContext(GlobalContext)
-    const nav = useNavigate()
+const Clock = () => {
     let date = new Date().toLocaleTimeString()
     const [time, setTime] = useState(date)
     setInterval(()=>{
         let date = new Date().toLocaleTimeString()
         setTime(date)
     },1000)
+    return (
+        <div className="header_first">
+            <p className="header_first_title">LIMITED OFFER: 30% OFF. Use RABBIT30 at Checkout.</p>
+            <p className="header_first_clock">{time}</p>
+        </div>
+    )
+}
+
+const Header = () => {
+    const {cart} = useContext(GlobalContext)
+    const nav = useNavigate()
+    const [stateCart, setStateCart] = useState()
     const goHome = () => {
         nav('/')
+    }
+    const handleStateCart = (state) => {
+        setStateCart(state)
     }
     return (
         <>
             <div className="header">
-                <div className="header_first">
-                    <p className="header_first_title">LIMITED OFFER: 30% OFF. Use RABBIT30 at Checkout.</p>
-                    <p className="header_first_clock">{time}</p>
-                </div>
+                <Clock/>
                 <div className="header_second">
                     <div className="header_second_logo pointer" onClick={()=>{goHome()}}>
                         <img src={icon} alt="logo" className='header_second_logo_icon'/>
@@ -36,10 +47,11 @@ const Header = () => {
                     <div className="header_second_icon">
                         <p className="header_second_icon_account pointer">Your Account</p>
                         <p>|</p>
-                        <p className='pointer'>
+                        <p className='pointer' onClick={()=>handleStateCart("show")}>
                             <i className="fa-solid fa-bag-shopping header_second_icon_cart"/>
-                            <span className='header_second_icon_quantity'>{cart.length}</span>
+                            <span className='header_second_icon_quantity' >{cart.length}</span>
                         </p>
+                        { stateCart == "show" ? <Cart stateCart={stateCart} handleStateCart={handleStateCart}/> : <></>}
                     </div>
                 </div>
                 <div className="header_nav">

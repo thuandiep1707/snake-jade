@@ -13,7 +13,7 @@ import bestsale from '../../assets/img/homepage/bestsale.png'
 import Maskgroup from '../../assets/img/homepage/Maskgroup.png'
 
 import { education, tree, recently, num, order, choose, testimonials, bestSale } from '../../assets/data/homapageData'
-import ProductCard from '../../components/productcart/ProductCard'
+import ProductCard from '../../components/productcard/ProductCard'
 import TestimonialsCard from './components/TestimonialsCard'
 
 import './homepage.scss'

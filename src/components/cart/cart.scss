@@ -1,0 +1,83 @@
+.cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    height: 100vh;
+    width: 100vw;
+    &_close{
+        background-color: #42424265;
+        width: 100%;
+        height: 100%;
+    }
+    &_list{
+        position: absolute;
+        top: 0;
+        background-color: #fff;
+        height: 100%;
+        width: 600px;
+        margin-left: auto;
+        margin-right: 0px;
+        padding: 32px;
+        animation: show .25s 1  linear forwards;
+        &_header{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        &_section{
+            min-height: 519px;
+            margin-top: 20px;
+            &_icon{
+                background-color: #F2F6F4;
+                aspect-ratio: 1;
+                width: 160px;
+                margin: 240px 184px 64px;
+                border: 48px #F2F6F4 solid;
+                border-radius: 50%;
+                font-size: 64px;
+            }
+            &_show_product{
+                display: inline-block;
+                background-color: #17AF26;
+                width: 190px;
+                margin-left: 169px;
+                border: 3px #17AF26 solid;
+                border-radius: 30px;
+                line-height: 56px;
+                text-decoration: none;
+                text-align: center;
+                color: white;
+                font-size: 16px;
+                transition: all .25s linear;
+                &:hover{
+                    background-color: unset;
+                    color: #17AF26;
+                }
+            }
+        }
+    }
+}
+
+.show{
+    animation: show .25s 1  linear forwards;
+}
+.hiden{
+    animation: hiden .25s 1 linear forwards
+}
+@keyframes show {
+    from{
+        right: -600px;
+    }
+    to{
+        right: 0;
+    }
+}
+@keyframes hiden {
+    from{
+        right: 0;
+    }
+    to{
+        right: -600px;
+    }
+}

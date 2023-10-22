@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import ProductCart from '../../components/productcart/ProductCard'
+import ProductCard from '../../components/productcard/ProductCard'
 import { intros, productRadio, order, selling, category, panel } from '../../assets/data/categoryData'
 import './category.scss'
 
@@ -10,6 +10,7 @@ const Category = () => {
     const [priceFilter, setPriceFilter] = useState(120)
     const [orderFilter, setOrderFilter] = useState()
     const [rateFilter, setRateFilter] = useState()
+
     const handleSetProductFilter = (value) => {
         setProductFilter(value)
     }
@@ -33,7 +34,6 @@ const Category = () => {
     const handleClearFilter = () => {
         location.reload()
     }
-
     return(
         <main className="category">
             <header className="category_intros">
@@ -144,13 +144,13 @@ const Category = () => {
                             <h3 className="category_container_shop_main_selling_title">Top Selling</h3>
                             <div className="category_container_shop_main_selling_products">
                                 {
-                                    selling.map((product, key)=><ProductCart product={product} key={key} />)
+                                    selling.map((product, key)=><ProductCard product={product} key={key} />)
                                 }
                             </div>
                         </div>
                         <div className="category_container_shop_main_category">
                             {
-                                category.map((product, key)=><ProductCart product={product} key={key} />)
+                                category.map((product, key)=><ProductCard product={product} key={key} />)
                             }
                         </div>
                         <div className="category_container_shop_main_panel">
@@ -178,7 +178,7 @@ const Category = () => {
                         </div>                        
                         <div className="category_container_shop_main_category" style={{marginBottom: "60px"}}>
                             {
-                                category.map((product, key)=><ProductCart product={product} key={key} />)
+                                category.map((product, key)=><ProductCard product={product} key={key} />)
                             }
                         </div>
                     </section>
