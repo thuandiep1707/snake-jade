@@ -2,6 +2,7 @@ import { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { GlobalContext } from '../../GlobalContext'
+import IconCheckout from '../../assets/img/footer/checkout.png'
 import './cart.scss'
 
 const Cart = ({ stateCart, handleStateCart }) => {
@@ -16,13 +17,19 @@ const Cart = ({ stateCart, handleStateCart }) => {
     if (stateCart == "show") {
         if (cart) {
             return (
-                <main className="cart" >""
+                <main className="cart" >
                     <div className="cart_close" onClick={()=>handleAnimation("hiden")}/>
                     <section className={`cart_list ${stateAnimation == "show" ? "show" : "hiden"}`}>
                         <header className='cart_list_header'>
                             <h2 >Your Cart</h2>
                             <p>({cart.length})</p>
                         </header>
+                        <section className='cart_list_section'>
+
+                        </section>
+                        <div className="cart_list_icon">
+                            <img src={IconCheckout} alt="" />
+                        </div>
                     </section>
                 </main>
             )

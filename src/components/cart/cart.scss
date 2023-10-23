@@ -11,6 +11,10 @@
         height: 100%;
     }
     &_list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         position: absolute;
         top: 0;
         background-color: #fff;
@@ -23,6 +27,7 @@
         &_header{
             display: flex;
             justify-content: space-between;
+            width: 100%;
 
         }
         &_section{
