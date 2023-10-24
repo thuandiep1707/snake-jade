@@ -1,0 +1,10 @@
+.productpage{
+    width: 100%;
+    min-height: 100vh;
+    border-top: 1px #c8c8c8 solid;
+    &_detail{
+        width: 1400px;
+        margin: 0 auto;
+        padding: 40px 64px 336px;
+    }
+}
