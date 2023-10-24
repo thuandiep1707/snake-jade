@@ -1,4 +1,4 @@
-import {} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import './productcard.scss'
 
@@ -24,7 +24,7 @@ const ProductCard = ({product}) => {
                 <span className='productcard_weight_span pointer'>1/2lb</span>
                 <span className='productcard_weight_span pointer'>1/4lb</span>
             </p>
-            <button className="productcard_btn pointer">See Details</button>
+            <Link to='/productpage/01' className="productcard_btn">See Details</Link>
         </div>
     )
 }
