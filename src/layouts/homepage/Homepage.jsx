@@ -1,4 +1,5 @@
 import { useNavigate, Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 import block1 from '../../assets/img/homepage/block1.png'
 import block2 from '../../assets/img/homepage/block2.png'
@@ -23,6 +24,9 @@ const HomePage = () => {
     const handleButtonNavToShop = () => {
         navigate('/category')
     }
+    useEffect(()=>{
+        window.scrollTo({top: 0, behavior: "smooth"})
+    })
     return (
         <div className="homepage">
             <div className="homepage_about">

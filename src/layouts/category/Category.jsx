@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import ProductCard from '../../components/productcard/ProductCard'
 import { intros, productRadio, order, selling, category, panel } from '../../assets/data/categoryData'
@@ -34,6 +34,10 @@ const Category = () => {
     const handleClearFilter = () => {
         location.reload()
     }
+
+    useEffect(()=>{
+        window.scrollTo({top: 0, behavior: "smooth"})
+    })
     return(
         <main className="category">
             <header className="category_intros">
