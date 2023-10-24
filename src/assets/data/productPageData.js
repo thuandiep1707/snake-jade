@@ -1,12 +1,36 @@
+import effect from '../img/product/effects.png'
+import relieve from '../img/product/relieve.png'
+import aromas from '../img/product/aromas.png'
+
 const product ={
     img : "",
     classification : "FLOWER",
     name : "2 Oz Deal Watermelon Zkittles + Purple Gushers",
     rate : "4.6/5",
     review : 132,
-    compound : "Sativa 100%",
+    compound1 : "Indica",
+    compound2 : "Sativa 100%",
     price : 80
 }
+
+const section2 = [
+    {
+        icon : effect,
+        name : "EFFECTS",
+        content : "Calming, Creative, Happy, Relaxing, Sleepy, Uplifting"
+    },
+    {
+        icon : relieve,
+        name : "RELIEVE",
+        content : "Anxiety, Arthritis, Chronic Pain, Depression, Fatigue, Inflammation, Insomnia, Irregular Bowel Movements, Migraines, Mood Swings"
+    },
+    {
+        icon : aromas,
+        name : "AROMAS",
+        content : "Chemical, Citrus, Earthy, Pungent, Sour"
+    }
+]
+
 const testimonials = [
     {
         avatar : "",
@@ -62,3 +86,5 @@ const featured = [
         price : 80
     }
 ]
+
+export { product, section2, testimonials, featured }
