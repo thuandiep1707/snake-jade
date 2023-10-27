@@ -34,7 +34,7 @@ const ProductPage = () => {
     return (
         <main className="productpage">
             <section className="productpage_detail">
-                <img src={product.img} alt="" className="productpage_detail_img" />
+                <img src={product.img} alt="âsá" className="productpage_detail_img" />
                 <section className="productpage_detail_all">
                     <section className="productpage_detail_all_section1">
                         <h3>CONCENTRATES</h3>
@@ -149,14 +149,14 @@ const ProductPage = () => {
                         </section>
                     </section>
                 </section>
-                <section className="productpage_feature">
-                    <p className="productpage_feature_title"></p>
-                    <div className="productpage_feature_list">
-                        {featured.map((product, key)=>
-                            <ProductCard product={product} key={key} />
-                        )}
-                    </div>
-                </section>
+            </section>
+            <section className="productpage_feature">
+                <p className="productpage_feature_title">Featured Product</p>
+                <div className="productpage_feature_list">
+                    {featured.map((product, key)=>
+                        <ProductCard product={product} key={key} />
+                    )}
+                </div>
             </section>
         </main>
     )
