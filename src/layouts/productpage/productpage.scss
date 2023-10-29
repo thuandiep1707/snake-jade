@@ -16,7 +16,78 @@
             border-radius: 24px;
         }
         &_all{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
             width: 600px;
+            &_section1{
+                display: flex;
+                flex-direction: column;
+                align-items: self-start;
+                gap: 16px;
+                .h3{
+                    color: #9D9EA2;
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: 4px;
+                }
+                &_name{
+                    font-size: 32px;
+                    font-weight: 600;
+                    
+                }
+                &_compound{
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 16px;
+                    &>p{
+                        background-color: #F2F6F4;
+                        padding: 4px 16px;
+                        border-radius: 8px;
+                        color: #05422C;
+                        font-size: 12px;
+                    }
+                }
+                &_price_rate{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    &>p:first-child{
+                        color: #EB2606;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 30px;
+                    }
+                }
+            }
+            &_section2{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                padding: 20px;
+                border: 1px #f4f4f4 solid;
+                border-radius: 12px;
+                &_element{
+                    display: grid;
+                    grid-template-columns: 32px auto;
+                    gap: 16px;
+                    &_content{
+                        &>h3{
+                            color: #d4d4d4;
+                            font-size: 12px;
+                            // font-weight: 400;
+                            letter-spacing: 2px;
+                            margin-bottom: 8px;
+                        }
+                        &>p{
+                            font-size: 14px;
+                            line-height: 150%;
+                        }
+                    }
+                }
+            }
         }
     }
     &_feature{
@@ -32,6 +103,7 @@
             grid-template-columns:  repeat(4, 1fr);
             column-gap: 36px;
             margin-bottom: 336px;
+            height: 600px;
         }
     }
 }

@@ -37,7 +37,7 @@ const ProductPage = () => {
                 <img src={product.img} alt="âsá" className="productpage_detail_img" />
                 <section className="productpage_detail_all">
                     <section className="productpage_detail_all_section1">
-                        <h3>CONCENTRATES</h3>
+                        <h3 className='h3'>CONCENTRATES</h3>
                         <h2 className="productpage_detail_all_section1_name">{product.name}</h2>
                         <div className="productpage_detail_all_section1_compound">
                             <p>{product.compound1}</p>
