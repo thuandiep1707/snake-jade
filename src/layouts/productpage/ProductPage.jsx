@@ -78,7 +78,7 @@ const ProductPage = () => {
                             </p>
                         </div>
                         <div className="productpage_detail_all_wp_pack">
-                            <p>ADD INTEGRA PACK</p>
+                            <p className='title'>ADD INTEGRA PACK</p>
                             <div className="input1" onClick={()=>handleSetPack(2)}>
                                 <input id='4g' type="radio" name='pack' defaultChecked={pack == 2 ? true : false} />
                                 <label htmlFor="4g" className='fa-solid fa-check radio_check'></label>
