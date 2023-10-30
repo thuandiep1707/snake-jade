@@ -102,6 +102,27 @@
                 }
 
             }
+            &_wp{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 24px;
+                width: 100%;
+                &_weight, &_pack{
+                    &_title{
+                        color: #71737899;
+                        letter-spacing: 1px;
+                        font-size: 12px;
+                        font-weight: 400;
+                        margin-bottom: 12px; 
+                    }
+                    &_selects > span{
+                        background-color: #F3FBF4;
+                        margin-right: 16px;
+                        padding: 4px 14px;
+                        border-radius: 4px;
+                    }
+                }                
+            }
         }
     }
     &_feature{
