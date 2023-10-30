@@ -88,6 +88,20 @@
                     }
                 }
             }
+            &_description{
+                .h3{
+                    color: #71737899;
+                    letter-spacing: 1px;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+                .paragrap{
+                    margin: 12px 0 24px;
+                    color: #46494F;
+                    font-size: 14px;
+                }
+
+            }
         }
     }
     &_feature{
