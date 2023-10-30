@@ -65,8 +65,8 @@ const ProductPage = () => {
                         }
                     </section>
                     <section className="productpage_detail_all_description">
-                        <h3>DESCRIPTION</h3>
-                        <p>Jungle Diamonds is a slightly indica dominant hybrid strain (60% indica/40% sativa) created through crossing the infamous Slurricane X Gorilla Glue #4 strains.</p>
+                        <h3 className='h3'>DESCRIPTION</h3>
+                        <p className='paragrap'>Jungle Diamonds is a slightly indica dominant hybrid strain (60% indica/40% sativa) created through crossing the infamous Slurricane X Gorilla Glue #4 strains.</p>
                     </section>
                     <section className="productpage_detail_all_wp">
                         <div className="productpage_detail_all_wp_weight">
