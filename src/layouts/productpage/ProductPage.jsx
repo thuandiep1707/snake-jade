@@ -91,53 +91,53 @@ const ProductPage = () => {
                             </div>
                         </div>
                         <p className="productpage_detail_all_wp_point">Purchase this product now and earn 80 Points!</p>
-                        <section className="productpage_detail_all_wp_add">
-                            <div className="productpage_detail_all_wp_add_infor">
-                                <p className="productpage_detail_all_wp_add_infor_kush">
-                                    <span>Khalifa Kush (AAAA)</span>
-                                    <span>{quantity}x</span>
-                                    <span>$ {product.price}.00</span>
-                                </p>
-                                <p className="productpage_detail_all_wp_add_infor_pack">
-                                    <span>Add Integra Pack - {pack == 2 ? "4g" : "8g"}</span>
-                                    <span>${pack}.00</span>
-                                </p>
-                            </div>
-                            <div className="productpage_detail_all_wp_add_stock">
-                                <div className="productpage_detail_all_wp_add_stock_quantity">
-                                    <div className="productpage_detail_all_wp_add_stock_quantity_box">
-                                        <button className="minus_btn pointer"> - </button>
-                                        <p>{quantity}</p>
-                                        <button className="add_btn pointer"> + </button>
-                                    </div>
-                                    <p>In Stock</p>
-                                </div>
-                                <button className="productpage_detail_all_wp_add_stock_btn">Add to Cart | $ {quantity * product.price + pack}.00</button>
-                            </div>
-                            <div className="list">
-                                <div className="endow">
-                                    <i className="fa-solid fa-check" />
-                                    <p>Free Xpress Shipping on orders over <span style={{color: '#F2BC1B'}}>$149</span></p>
-                                </div>
-                                <div className="endow">
-                                    <i className="fa-solid fa-check" />
-                                    <p>Order before 12:00pm for same day dispatch</p>
-                                </div>
-                                <div className="productpage_detail_all_wp_add_endow">
-                                    <i className="fa-solid fa-check" />
-                                    <p>Support & ordering open 7 day a week</p>
-                                </div>
-                            </div>
-                        </section>
-                        <footer className="productpage_detail_all_wp_footer">
-                            <p>
-                                <span className='span1'>SKU</span> : <span className='span2'>N/A</span>
-                            </p>
-                            <p>
-                                <span className='span1'>Categories</span> : <span className='span2'>AAAA Weed, Indica</span>
-                            </p>
-                        </footer>
                     </section>
+                    <section className="productpage_detail_all_wp_add">
+                        <div className="productpage_detail_all_wp_add_infor">
+                            <p className="productpage_detail_all_wp_add_infor_kush">
+                                <span>Khalifa Kush (AAAA)</span>
+                                <span>{quantity}x</span>
+                                <span>$ {product.price}.00</span>
+                            </p>
+                            <p className="productpage_detail_all_wp_add_infor_pack">
+                                <span>Add Integra Pack - {pack == 2 ? "4g" : "8g"}</span>
+                                <span>${pack}.00</span>
+                            </p>
+                        </div>
+                        <div className="productpage_detail_all_wp_add_stock">
+                            <div className="productpage_detail_all_wp_add_stock_quantity">
+                                <div className="productpage_detail_all_wp_add_stock_quantity_box">
+                                    <button className="minus_btn pointer"> - </button>
+                                    <p>{quantity}</p>
+                                    <button className="add_btn pointer"> + </button>
+                                </div>
+                                <p>In Stock</p>
+                            </div>
+                            <button className="productpage_detail_all_wp_add_stock_btn">Add to Cart | $ {quantity * product.price + pack}.00</button>
+                        </div>
+                        <div className="list">
+                            <div className="endow">
+                                <i className="fa-solid fa-check" />
+                                <p>Free Xpress Shipping on orders over <span style={{color: '#F2BC1B'}}>$149</span></p>
+                            </div>
+                            <div className="endow">
+                                <i className="fa-solid fa-check" />
+                                <p>Order before 12:00pm for same day dispatch</p>
+                            </div>
+                            <div className="productpage_detail_all_wp_add_endow">
+                                <i className="fa-solid fa-check" />
+                                <p>Support & ordering open 7 day a week</p>
+                            </div>
+                        </div>
+                    </section>
+                    <footer className="productpage_detail_all_wp_footer">
+                        <p>
+                            <span className='span1'>SKU</span> : <span className='span2'>N/A</span>
+                        </p>
+                        <p>
+                            <span className='span1'>Categories</span> : <span className='span2'>AAAA Weed, Indica</span>
+                        </p>
+                    </footer>
                     <section className="productpage_detail_all_section2">
                         <header className="productpage_detail_all_section2_header">
                             <button style={btnHeader == "Description" ? styleBtnHeader : {}} onClick={()=> handleSetBtnHeader('Description')}>Description</button>
